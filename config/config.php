@@ -39,7 +39,7 @@ $config['server']['probuf_set'] = [
     'package_max_length' => 2000000,  //协议最大长度)
 ];
 
-$config['tcp']['enable'] = true;
+$config['tcp']['enable'] = false;
 $config['tcp']['socket'] = '0.0.0.0';
 $config['tcp']['port'] = 8000;
 $config['tcp']['method_prefix'] = 'tcp';
