@@ -45,7 +45,7 @@ CMD_ARGS=$*
 # default command & build_env
 COMMAND='all'
 BUILD_ENV='.docker'
-FROM_IMAGE='docker.camera360.com:5000/unstable/env:php7.0-dev'
+FROM_IMAGE='docker.camera360.com:5000/pinguoops/env:php7.0-dev'
 
 # help function
 docker_help () {
