@@ -6,10 +6,10 @@
  * @copyright Chengdu pinguo Technology Co.,Ltd.
  */
 
-$config['server']['set']['reactor_num'] = 1; //reactor thread num
-$config['server']['set']['worker_num'] = 1;  //worker process num
+$config['server']['set']['reactor_num'] = 8; //reactor thread num
+$config['server']['set']['worker_num'] = 8;  //worker process num
 $config['server']['set']['backlog'] = 4096; //listen backlog
-$config['server']['set']['task_worker_num'] = 1; //task process num
+$config['server']['set']['task_worker_num'] = 8; //task process num
 
 $config['http_server']['port'] = 8199;
 $config['http_server']['socket'] = '0.0.0.0';

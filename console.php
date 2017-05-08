@@ -17,5 +17,5 @@ define('RUNTIME_DIR', WWW_DIR . '/runtime/' . SYSTEM_NAME);
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-$worker = new \App\AppServer();
-PG\MSF\Server::run();
+$cli = new \PG\MSF\MSFCli();
+$cli->onConsoleRequest();
