@@ -16,6 +16,14 @@
       "type": "vcs",
       "url": "https://github.com/PGWireless/php-msf"
     },
+    "php-aop": {
+      "type": "vcs",
+      "url": "http://182.150.28.13:3000/PGWireless/php-aop.git"
+    },
+    "php-context": {
+      "type": "vcs",
+      "url": "http://182.150.28.13:3000/PGWireless/php-context.git"
+    },
     "php-log": {
       "type": "vcs",
       "url": "http://182.150.28.13:3000/PGWireless/php-log.git"
