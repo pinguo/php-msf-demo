@@ -1,10 +1,10 @@
 {
-  "name": "PGWireless/hotpot",
+  "name": "PGWireless/msf",
   "type": "project",
   "license": "BSD-3-Clause",
   "support": {
-    "issues": "https://github.com/PGWireless/hotpot/issues?state=open",
-    "source": "https://github.com/PGWireless/hotpot"
+    "issues": "https://github.com/PGWireless/php-msf",
+    "source": "https://github.com/PGWireless/php-msf"
   },
   "prefer-stable": true,
   "repositories": {
@@ -14,37 +14,41 @@
     },
     "php-msf": {
       "type": "vcs",
-      "url": "https://github.com/PGWireless/php-msf"
+      "url": "https://github.com/PGWireless/php-msf.git"
     },
     "php-aop": {
       "type": "vcs",
-      "url": "http://182.150.28.13:3000/PGWireless/php-aop.git"
+      "url": "https://github.com/PGWireless/php-aop.git"
     },
     "php-context": {
       "type": "vcs",
-      "url": "http://182.150.28.13:3000/PGWireless/php-context.git"
+      "url": "https://github.com/PGWireless/php-context.git"
     },
     "php-log": {
       "type": "vcs",
-      "url": "http://182.150.28.13:3000/PGWireless/php-log.git"
+      "url": "https://github.com/PGWireless/php-log.git"
     },
     "php-helper": {
       "type": "vcs",
-      "url": "http://182.150.28.13:3000/PGWireless/php-helper.git"
+      "url": "https://github.com/PGWireless/php-helper.git"
     },
     "php-exception": {
       "type": "vcs",
-      "url": "http://182.150.28.13:3000/PGWireless/php-exception.git"
+      "url": "https://github.com/PGWireless/php-exception.git"
+    },
+    "PGWireless/php-filter": {
+      "type": "vcs",
+      "url": "https://github.com/PGWireless/php-filter.git"
     }
   },
   "require": {
     "php": ">=7.0.0",
-    "PGWireless/php-msf": "dev-master"
+    "PGWireless/php-msf": "dev-master",
+    "PGWireless/php-filter": "dev-master"
   },
   "config": {
     "process-timeout": 1800,
-    "vendor-dir": "./vendor/",
-    "secure-http": false
+    "vendor-dir": "./vendor/"
   },
   "minimum-stability": "dev",
   "extra": {

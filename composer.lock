@@ -4,15 +4,90 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "16c9fcf8edd605f29c2d735b594835e6",
+    "content-hash": "280d0cd1aab89c78e8a750e0c016dad3",
     "packages": [
+        {
+            "name": "PGWireless/php-aop",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:PGWireless/php-aop.git",
+                "reference": "72480f4a49ac9c78007c9d589b3e80ff3333296a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PGWireless/php-aop/zipball/72480f4a49ac9c78007c9d589b3e80ff3333296a",
+                "reference": "72480f4a49ac9c78007c9d589b3e80ff3333296a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PG\\AOP\\": "src/"
+                }
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "PGWireless PHP AOP",
+            "homepage": "https://github.com/PGWireless/php-aop",
+            "support": {
+                "source": "https://github.com/PGWireless/php-aop/tree/master",
+                "issues": "https://github.com/PGWireless/php-aop/issues"
+            },
+            "time": "2017-06-06 06:30:00"
+        },
+        {
+            "name": "PGWireless/php-context",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:PGWireless/php-context.git",
+                "reference": "16b396ddd625201c866767c6e257c190d1b326e9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PGWireless/php-context/zipball/16b396ddd625201c866767c6e257c190d1b326e9",
+                "reference": "16b396ddd625201c866767c6e257c190d1b326e9",
+                "shasum": ""
+            },
+            "require": {
+                "pgwireless/php-log": "dev-master",
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PG\\Context\\": "src"
+                }
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "PGWireless PHP Context",
+            "support": {
+                "issues": "https://github.com/PGWireless/context/issues?state=open",
+                "wiki": "https://github.com/PGWireless/context/wiki",
+                "source": "https://github.com/PGWireless/context"
+            },
+            "time": "2017-05-16 05:49:24"
+        },
         {
             "name": "PGWireless/php-exception",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "http://182.150.28.13:3000/PGWireless/php-exception.git",
-                "reference": "a61f33fd03697dac849871855a41fc9f13e86b94"
+                "url": "git@github.com:PGWireless/php-exception.git",
+                "reference": "d8d8fafc97b77dd2643398f42772c50c7c67d8ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PGWireless/php-exception/zipball/d8d8fafc97b77dd2643398f42772c50c7c67d8ea",
+                "reference": "d8d8fafc97b77dd2643398f42772c50c7c67d8ea",
+                "shasum": ""
             },
             "require": {
                 "php": ">=7.0"
@@ -24,7 +99,7 @@
                 }
             },
             "license": [
-                "proprietary"
+                "BSD-3-Clause"
             ],
             "description": "Pinguo PHP exception lib",
             "support": {
@@ -32,17 +107,60 @@
                 "wiki": "https://github.com/PGWireless/php-exception/wiki",
                 "source": "https://github.com/PGWireless/php-exception"
             },
-            "time": "2017-04-12 05:38:19"
+            "time": "2017-05-12 02:36:27"
+        },
+        {
+            "name": "PGWireless/php-filter",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:PGWireless/php-filter.git",
+                "reference": "1513fb87b313aef57a64b165148c95b965166b4b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PGWireless/php-filter/zipball/1513fb87b313aef57a64b165148c95b965166b4b",
+                "reference": "1513fb87b313aef57a64b165148c95b965166b4b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PG\\Filter\\": "src"
+                }
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Pinguo PHP filter lib",
+            "support": {
+                "issues": "https://github.com/PGWireless/php-filter/issues?state=open",
+                "wiki": "https://github.com/PGWireless/php-filter/wiki",
+                "source": "https://github.com/PGWireless/php-filter"
+            },
+            "time": "2017-06-06 14:01:50"
         },
         {
             "name": "PGWireless/php-helper",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "http://182.150.28.13:3000/PGWireless/php-helper.git",
-                "reference": "55451c74e7d38fe4aae8d4bd2a5c10f0d2637ec0"
+                "url": "git@github.com:PGWireless/php-helper.git",
+                "reference": "9eaa042020c8abc9f264fb316b475d7bb6f855e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PGWireless/php-helper/zipball/9eaa042020c8abc9f264fb316b475d7bb6f855e8",
+                "reference": "9eaa042020c8abc9f264fb316b475d7bb6f855e8",
+                "shasum": ""
             },
             "require": {
+                "pgwireless/php-context": "dev-master",
+                "pgwireless/php-exception": "dev-master",
+                "pgwireless/php-log": "dev-master",
                 "php": ">=7.0"
             },
             "type": "library",
@@ -52,23 +170,29 @@
                 }
             },
             "license": [
-                "proprietary"
+                "BSD-3-Clause"
             ],
-            "description": "Pinguo PHP helper lib",
+            "description": "PGWireless PHP Helper",
             "support": {
                 "issues": "https://github.com/PGWireless/php-helper/issues?state=open",
                 "wiki": "https://github.com/PGWireless/php-helper/wiki",
-                "source": "https://github.com/PGWireless/php-helper"
+                "source": "https://github.com/PGWireless/helper"
             },
-            "time": "2017-04-13 07:43:46"
+            "time": "2017-06-13 06:29:44"
         },
         {
             "name": "PGWireless/php-log",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "http://182.150.28.13:3000/PGWireless/php-log.git",
-                "reference": "1710a7630d2a922e425dd43ee95f93da8d874fc5"
+                "url": "git@github.com:PGWireless/php-log.git",
+                "reference": "ceec0ed7ec6cf67f7d0ce68c1f71ef1e031957f9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PGWireless/php-log/zipball/ceec0ed7ec6cf67f7d0ce68c1f71ef1e031957f9",
+                "reference": "ceec0ed7ec6cf67f7d0ce68c1f71ef1e031957f9",
+                "shasum": ""
             },
             "require": {
                 "monolog/monolog": "2.0.x-dev",
@@ -81,7 +205,7 @@
                 }
             },
             "license": [
-                "proprietary"
+                "BSD-3-Clause"
             ],
             "description": "Pinguo PHP log lib",
             "support": {
@@ -89,7 +213,7 @@
                 "wiki": "https://github.com/PGWireless/php-log/wiki",
                 "source": "https://github.com/PGWireless/php-log"
             },
-            "time": "2017-04-07 02:53:35"
+            "time": "2017-05-16 05:47:35"
         },
         {
             "name": "PGWireless/php-msf",
@@ -97,12 +221,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:PGWireless/php-msf.git",
-                "reference": "0501428a688c1df256aa2f2192a173727ec75649"
+                "reference": "5a7969bd79fbc0fe85ad5af5e39a9a7244294e63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PGWireless/php-msf/zipball/0501428a688c1df256aa2f2192a173727ec75649",
-                "reference": "0501428a688c1df256aa2f2192a173727ec75649",
+                "url": "https://api.github.com/repos/PGWireless/php-msf/zipball/5a7969bd79fbc0fe85ad5af5e39a9a7244294e63",
+                "reference": "5a7969bd79fbc0fe85ad5af5e39a9a7244294e63",
                 "shasum": ""
             },
             "require": {
@@ -110,23 +234,21 @@
                 "flexihash/flexihash": "^2.0.0",
                 "hassankhan/config": "~0.10",
                 "league/plates": "3.*",
+                "pgwireless/php-aop": "dev-master",
+                "pgwireless/php-context": "dev-master",
                 "pgwireless/php-exception": "dev-master",
                 "pgwireless/php-helper": "dev-master",
                 "pgwireless/php-log": "dev-master",
                 "php": ">=7.0",
-                "protobuf-php/protobuf": "~0.1.2",
-                "protobuf-php/protobuf-plugin": "^0.1.2",
                 "voku/anti-xss": "2.0.1"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "PG\\MSF\\Server\\": "src/Server",
-                    "PG\\MSF\\Client\\": "src/Client",
-                    "PG\\MSF\\Test\\": "src/test"
+                    "PG\\MSF\\": "src/"
                 },
                 "files": [
-                    "src/Server/Helpers/Common.php"
+                    "src/Helpers/Common.php"
                 ]
             },
             "license": [
@@ -138,37 +260,38 @@
                 "source": "https://github.com/PGWireless/php-msf/tree/master",
                 "issues": "https://github.com/PGWireless/php-msf/issues"
             },
-            "time": "2017-04-18 07:08:40"
+            "time": "2017-06-13 07:13:29"
         },
         {
             "name": "alcaeus/mongo-php-adapter",
-            "version": "1.0.10",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/alcaeus/mongo-php-adapter.git",
-                "reference": "a85069eb0d1b8c3dc7b24572e91f158f8a3c9e77"
+                "reference": "72870346ae8bf53f8238593dc1dfe73efdc1c77a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/alcaeus/mongo-php-adapter/a85069eb0d1b8c3dc7b24572e91f158f8a3c9e77.zip",
-                "reference": "a85069eb0d1b8c3dc7b24572e91f158f8a3c9e77",
+                "url": "https://files.phpcomposer.com/files/alcaeus/mongo-php-adapter/72870346ae8bf53f8238593dc1dfe73efdc1c77a.zip",
+                "reference": "72870346ae8bf53f8238593dc1dfe73efdc1c77a",
                 "shasum": ""
             },
             "require": {
                 "ext-hash": "*",
+                "ext-mongodb": "^1.2.0",
                 "mongodb/mongodb": "^1.0.1",
-                "php": "^5.5 || ^7.0"
+                "php": "^5.6 || ^7.0"
             },
             "provide": {
                 "ext-mongo": "1.6.14"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8 || ^5.0"
+                "phpunit/phpunit": "^5.7 || ^6.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -201,74 +324,7 @@
                 "database",
                 "mongodb"
             ],
-            "time": "2017-03-29T18:29:29+00:00"
-        },
-        {
-            "name": "doctrine/inflector",
-            "version": "v1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doctrine/inflector.git",
-                "reference": "90b2128806bfde671b6952ab8bea493942c1fdae"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/doctrine/inflector/90b2128806bfde671b6952ab8bea493942c1fdae.zip",
-                "reference": "90b2128806bfde671b6952ab8bea493942c1fdae",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "4.*"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Doctrine\\Common\\Inflector\\": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Roman Borschel",
-                    "email": "roman@code-factory.org"
-                },
-                {
-                    "name": "Benjamin Eberlei",
-                    "email": "kontakt@beberlei.de"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
-                },
-                {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com"
-                },
-                {
-                    "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com"
-                }
-            ],
-            "description": "Common String Manipulations with regard to casing and singular/plural rules.",
-            "homepage": "http://www.doctrine-project.org",
-            "keywords": [
-                "inflection",
-                "pluralize",
-                "singularize",
-                "string"
-            ],
-            "time": "2015-11-06T14:35:42+00:00"
+            "time": "2017-05-13T19:34:12+00:00"
         },
         {
             "name": "flexihash/flexihash",
@@ -541,12 +597,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "35c84c5b6f79cb36f17b1cc2d7c0a4e490729614"
+                "reference": "e5ff7eb0746c50d483fc9797f1f288acd8cbb5fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/Seldaek/monolog/35c84c5b6f79cb36f17b1cc2d7c0a4e490729614.zip",
-                "reference": "35c84c5b6f79cb36f17b1cc2d7c0a4e490729614",
+                "url": "https://files.phpcomposer.com/files/Seldaek/monolog/e5ff7eb0746c50d483fc9797f1f288acd8cbb5fc.zip",
+                "reference": "e5ff7eb0746c50d483fc9797f1f288acd8cbb5fc",
                 "shasum": ""
             },
             "require": {
@@ -612,7 +668,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2017-04-03 22:04:57"
+            "time": "2017-05-08 09:13:42"
         },
         {
             "name": "paragonie/random_compat",
@@ -663,189 +719,6 @@
             "time": "2017-03-13T16:27:32+00:00"
         },
         {
-            "name": "protobuf-php/google-protobuf-proto",
-            "version": "v0.1.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/protobuf-php/google-protobuf-proto.git",
-                "reference": "da1827b4a23fccd4eb998a8d4bcd972f2330bc29"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/protobuf-php/google-protobuf-proto/da1827b4a23fccd4eb998a8d4bcd972f2330bc29.zip",
-                "reference": "da1827b4a23fccd4eb998a8d4bcd972f2330bc29",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.0"
-            },
-            "require-dev": {
-                "protobuf-php/protobuf-plugin": ">=0.1"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "google\\protobuf": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabio B. Silva",
-                    "email": "fabio.bat.silva@gmail.com",
-                    "homepage": "https://github.com/FabioBatSilva"
-                }
-            ],
-            "description": "Protocol Buffers classes from Google's Protocol Buffers Compiler",
-            "homepage": "https://github.com/protobuf-php/google-protobuf-proto",
-            "keywords": [
-                "protobuf",
-                "protocol buffer",
-                "serializing"
-            ],
-            "time": "2016-08-04T03:14:12+00:00"
-        },
-        {
-            "name": "protobuf-php/protobuf",
-            "version": "v0.1.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/protobuf-php/protobuf.git",
-                "reference": "c0da95f75ea418b39b02ff4528ca9926cc246a8c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/protobuf-php/protobuf/c0da95f75ea418b39b02ff4528ca9926cc246a8c.zip",
-                "reference": "c0da95f75ea418b39b02ff4528ca9926cc246a8c",
-                "shasum": ""
-            },
-            "require": {
-                "ext-mbstring": "*",
-                "php": ">=5.5.0"
-            },
-            "require-dev": {
-                "instaclick/coding-standard": "^1.1",
-                "instaclick/object-calisthenics-sniffs": "dev-master",
-                "instaclick/symfony2-coding-standard": "dev-remaster",
-                "php-mock/php-mock-phpunit": "^0.2",
-                "phpunit/phpunit": "^4",
-                "protobuf-php/protobuf-plugin": ">=0.1",
-                "satooshi/php-coveralls": "^0.6",
-                "squizlabs/php_codesniffer": "^1.5"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Protobuf\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabio B. Silva",
-                    "email": "fabio.bat.silva@gmail.com",
-                    "homepage": "https://github.com/FabioBatSilva"
-                },
-                {
-                    "name": "Iván -DrSlump- Montes",
-                    "email": "drslump@pollinimini.net",
-                    "homepage": "https://github.com/drslump"
-                }
-            ],
-            "description": "PHP implementation of Google's Protocol Buffers",
-            "homepage": "https://github.com/protobuf-php/protobuf",
-            "keywords": [
-                "protobuf",
-                "protocol buffer",
-                "serializing"
-            ],
-            "time": "2016-09-21T23:47:34+00:00"
-        },
-        {
-            "name": "protobuf-php/protobuf-plugin",
-            "version": "v0.1.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/protobuf-php/protobuf-plugin.git",
-                "reference": "cd8d138fd91bc18df1a8812d9448bb3d7dce0996"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/protobuf-php/protobuf-plugin/cd8d138fd91bc18df1a8812d9448bb3d7dce0996.zip",
-                "reference": "cd8d138fd91bc18df1a8812d9448bb3d7dce0996",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/inflector": "^1.0",
-                "php": ">=5.5.0",
-                "protobuf-php/google-protobuf-proto": ">=0.1",
-                "protobuf-php/protobuf": ">=0.1",
-                "psr/log": "^1.0",
-                "symfony/console": "^2.5|^3.0",
-                "symfony/process": "^2.5|^3.0",
-                "zendframework/zend-code": "^2.6"
-            },
-            "require-dev": {
-                "instaclick/coding-standard": "~1.1",
-                "instaclick/object-calisthenics-sniffs": "dev-master",
-                "instaclick/symfony2-coding-standard": "dev-remaster",
-                "mikey179/vfsstream": "~1",
-                "php-mock/php-mock-phpunit": "^0.2",
-                "phpunit/phpunit": "~4",
-                "satooshi/php-coveralls": "~0.6",
-                "squizlabs/php_codesniffer": "~1.5"
-            },
-            "bin": [
-                "bin/protobuf"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Protobuf\\Compiler\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabio B. Silva",
-                    "email": "fabio.bat.silva@gmail.com",
-                    "homepage": "https://github.com/FabioBatSilva"
-                }
-            ],
-            "description": "PHP Code generator plugin from Google's Protocol Buffers",
-            "homepage": "https://github.com/protobuf-php/protobuf-plugin",
-            "keywords": [
-                "protobuf",
-                "protocol buffer",
-                "serializing"
-            ],
-            "time": "2016-11-03T18:34:52+00:00"
-        },
-        {
             "name": "psr/log",
             "version": "1.0.2",
             "source": {
@@ -893,137 +766,17 @@
             "time": "2016-10-10T12:19:37+00:00"
         },
         {
-            "name": "symfony/console",
-            "version": "v3.2.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/console.git",
-                "reference": "c30243cc51f726812be3551316b109a2f5deaf8d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/console/c30243cc51f726812be3551316b109a2f5deaf8d.zip",
-                "reference": "c30243cc51f726812be3551316b109a2f5deaf8d",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.9",
-                "symfony/debug": "~2.8|~3.0",
-                "symfony/polyfill-mbstring": "~1.0"
-            },
-            "require-dev": {
-                "psr/log": "~1.0",
-                "symfony/event-dispatcher": "~2.8|~3.0",
-                "symfony/filesystem": "~2.8|~3.0",
-                "symfony/process": "~2.8|~3.0"
-            },
-            "suggest": {
-                "psr/log": "For using the console logger",
-                "symfony/event-dispatcher": "",
-                "symfony/filesystem": "",
-                "symfony/process": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Console\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Console Component",
-            "homepage": "https://symfony.com",
-            "time": "2017-04-04T14:33:42+00:00"
-        },
-        {
-            "name": "symfony/debug",
-            "version": "v3.2.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/debug.git",
-                "reference": "56f613406446a4a0a031475cfd0a01751de22659"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/debug/56f613406446a4a0a031475cfd0a01751de22659.zip",
-                "reference": "56f613406446a4a0a031475cfd0a01751de22659",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.9",
-                "psr/log": "~1.0"
-            },
-            "conflict": {
-                "symfony/http-kernel": ">=2.3,<2.3.24|~2.4.0|>=2.5,<2.5.9|>=2.6,<2.6.2"
-            },
-            "require-dev": {
-                "symfony/class-loader": "~2.8|~3.0",
-                "symfony/http-kernel": "~2.8|~3.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Debug\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Debug Component",
-            "homepage": "https://symfony.com",
-            "time": "2017-03-28T21:38:24+00:00"
-        },
-        {
             "name": "symfony/intl",
-            "version": "v3.2.7",
+            "version": "v3.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/intl.git",
-                "reference": "7aeef013ee0f20add22d3c2f827d241408a604f7"
+                "reference": "a310b29a794578f544305f4f48e3f6c7981b606c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/intl/7aeef013ee0f20add22d3c2f827d241408a604f7.zip",
-                "reference": "7aeef013ee0f20add22d3c2f827d241408a604f7",
+                "url": "https://files.phpcomposer.com/files/symfony/intl/a310b29a794578f544305f4f48e3f6c7981b606c.zip",
+                "reference": "a310b29a794578f544305f4f48e3f6c7981b606c",
                 "shasum": ""
             },
             "require": {
@@ -1039,7 +792,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.2-dev"
+                    "dev-master": "3.3-dev"
                 }
             },
             "autoload": {
@@ -1085,7 +838,7 @@
                 "l10n",
                 "localization"
             ],
-            "time": "2017-03-05T17:42:14+00:00"
+            "time": "2017-06-01T21:01:25+00:00"
         },
         {
             "name": "symfony/polyfill",
@@ -1173,55 +926,6 @@
                 "shim"
             ],
             "time": "2016-05-18T14:27:53+00:00"
-        },
-        {
-            "name": "symfony/process",
-            "version": "v3.2.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/process.git",
-                "reference": "57fdaa55827ae14d617550ebe71a820f0a5e2282"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/process/57fdaa55827ae14d617550ebe71a820f0a5e2282.zip",
-                "reference": "57fdaa55827ae14d617550ebe71a820f0a5e2282",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.9"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Process\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Process Component",
-            "homepage": "https://symfony.com",
-            "time": "2017-03-27T18:07:02+00:00"
         },
         {
             "name": "voku/anti-xss",
@@ -1349,119 +1053,14 @@
                 "utf8"
             ],
             "time": "2016-06-29T23:42:06+00:00"
-        },
-        {
-            "name": "zendframework/zend-code",
-            "version": "2.6.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/zendframework/zend-code.git",
-                "reference": "95033f061b083e16cdee60530ec260d7d628b887"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/zendframework/zend-code/95033f061b083e16cdee60530ec260d7d628b887.zip",
-                "reference": "95033f061b083e16cdee60530ec260d7d628b887",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.5 || 7.0.0 - 7.0.4 || ^7.0.6",
-                "zendframework/zend-eventmanager": "^2.6 || ^3.0"
-            },
-            "require-dev": {
-                "doctrine/annotations": "~1.0",
-                "fabpot/php-cs-fixer": "1.7.*",
-                "phpunit/phpunit": "^4.8.21",
-                "zendframework/zend-stdlib": "^2.7 || ^3.0"
-            },
-            "suggest": {
-                "doctrine/annotations": "Doctrine\\Common\\Annotations >=1.0 for annotation features",
-                "zendframework/zend-stdlib": "Zend\\Stdlib component"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.6-dev",
-                    "dev-develop": "2.7-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Zend\\Code\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "provides facilities to generate arbitrary code using an object oriented interface",
-            "homepage": "https://github.com/zendframework/zend-code",
-            "keywords": [
-                "code",
-                "zf2"
-            ],
-            "time": "2016-04-20T17:26:42+00:00"
-        },
-        {
-            "name": "zendframework/zend-eventmanager",
-            "version": "3.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/zendframework/zend-eventmanager.git",
-                "reference": "c3bce7b7d47c54040b9ae51bc55491c72513b75d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/zendframework/zend-eventmanager/c3bce7b7d47c54040b9ae51bc55491c72513b75d.zip",
-                "reference": "c3bce7b7d47c54040b9ae51bc55491c72513b75d",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.6 || ^7.0"
-            },
-            "require-dev": {
-                "athletic/athletic": "^0.1",
-                "container-interop/container-interop": "^1.1.0",
-                "phpunit/phpunit": "^5.6",
-                "zendframework/zend-coding-standard": "~1.0.0",
-                "zendframework/zend-stdlib": "^2.7.3 || ^3.0"
-            },
-            "suggest": {
-                "container-interop/container-interop": "^1.1.0, to use the lazy listeners feature",
-                "zendframework/zend-stdlib": "^2.7.3 || ^3.0, to use the FilterChain feature"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.1-dev",
-                    "dev-develop": "3.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Zend\\EventManager\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "Trigger and listen to events within a PHP application",
-            "homepage": "https://github.com/zendframework/zend-eventmanager",
-            "keywords": [
-                "event",
-                "eventmanager",
-                "events",
-                "zf2"
-            ],
-            "time": "2016-12-19T21:47:12+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "pgwireless/php-msf": 20
+        "pgwireless/php-msf": 20,
+        "pgwireless/php-filter": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
