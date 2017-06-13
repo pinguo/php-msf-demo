@@ -8,19 +8,18 @@
 
 namespace App\Controllers;
 
-use PG\Helper\ParameterValidatorHelper;
-use PG\MSF\Controllers\BaseController;
+use PG\MSF\Controllers\Controller;
 use PG\Filter\{
     Request, Acf\AccessControl
 };
 
-class InnerController extends BaseController
+class InnerController extends Controller
 {
     public function initialization($controllerName, $methodName)
     {
         parent::initialization($controllerName, $methodName);
         $this->runFilter($controllerName, $methodName);
-        $this->PGLog->pushLog('params', $this->input->getAllPostGet());
+        $this->getContext()->getLog()->pushLog('params', $this->getContext()->getInput()->getAllPostGet());
         return true;
     }
 
@@ -35,8 +34,8 @@ class InnerController extends BaseController
         }
 
         /* @var $request Request */
-        $request             = $this->objectPool->get(Request::class);
-        $request->ip         = $this->input->getRemoteAddr();
+        $request             = $this->getContext()->getObjectPool()->get(Request::class);
+        $request->ip         = $this->getContext()->getInput()->getRemoteAddr();
         $request->controller = $controllerName;
         $request->method     = $methodName;
 
@@ -44,11 +43,12 @@ class InnerController extends BaseController
             if (!isset($filter['class'])) {
                 throw new \Exception('Filter config need class prop.');
             }
-            $clazz = $this->objectPool->get($filter['class']);
+            $clazz = $this->getObjectPool()->get($filter['class']);
             unset($filter['class']);
             foreach ($filter as $prop => $val) {
                 $clazz->$prop = $val;
             }
+            $clazz->initialization();
 
             if (call_user_func([$clazz, 'beforeMethod'], $request) === false) {
                 $clazz->denyCallback();

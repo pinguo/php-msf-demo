@@ -1,10 +1,10 @@
 {
-  "name": "PGWireless/hotpot",
+  "name": "PGWireless/msf",
   "type": "project",
   "license": "BSD-3-Clause",
   "support": {
-    "issues": "https://github.com/PGWireless/hotpot/issues?state=open",
-    "source": "https://github.com/PGWireless/hotpot"
+    "issues": "https://github.com/PGWireless/php-msf",
+    "source": "https://github.com/PGWireless/php-msf"
   },
   "prefer-stable": true,
   "repositories": {
@@ -16,59 +16,39 @@
       "type": "vcs",
       "url": "https://github.com/PGWireless/php-msf.git"
     },
-    "php-log": {
+    "php-aop": {
       "type": "vcs",
-      "url": "https://github.com/PGWireless/php-log.git"
-    },
-    "php-inner-serv": {
-      "type": "vcs",
-      "url": "https://github.com/PGWireless/php-inner-serv.git"
-    },
-    "php-helper": {
-      "type": "vcs",
-      "url": "https://github.com/PGWireless/php-helper.git"
+      "url": "https://github.com/PGWireless/php-aop.git"
     },
     "php-context": {
       "type": "vcs",
       "url": "https://github.com/PGWireless/php-context.git"
     },
-    "php-aop": {
+    "php-log": {
       "type": "vcs",
-      "url": "https://github.com/PGWireless/php-aop.git"
+      "url": "https://github.com/PGWireless/php-log.git"
     },
-    "php-db": {
+    "php-helper": {
       "type": "vcs",
-      "url": "https://github.com/PGWireless/php-db.git"
-    },
-    "php-filter": {
-      "type": "vcs",
-      "url": "https://github.com/PGWireless/php-filter.git"
+      "url": "https://github.com/PGWireless/php-helper.git"
     },
     "php-exception": {
       "type": "vcs",
       "url": "https://github.com/PGWireless/php-exception.git"
     },
-    "php-third": {
+    "PGWireless/php-filter": {
       "type": "vcs",
-      "url": "https://github.com/PGWireless/php-third.git"
-    },
-    "php-i18n": {
-      "type": "vcs",
-      "url": "https://github.com/PGWireless/php-i18n.git"
-    },
-    "pt-utils": {
-      "type": "vcs",
-      "url": "https://github.com/PGWireless/pt-utils.git"
+      "url": "https://github.com/PGWireless/php-filter.git"
     }
   },
   "require": {
     "php": ">=7.0.0",
-    "PGWireless/php-msf": "dev-master"
+    "PGWireless/php-msf": "dev-master",
+    "PGWireless/php-filter": "dev-master"
   },
   "config": {
     "process-timeout": 1800,
-    "vendor-dir": "./vendor/",
-    "secure-http": false
+    "vendor-dir": "./vendor/"
   },
   "minimum-stability": "dev",
   "extra": {
