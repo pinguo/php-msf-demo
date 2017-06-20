@@ -12,29 +12,33 @@
       "type": "composer",
       "url": "https://packagist.phpcomposer.com"
     },
-    "php-msf": {
+    "PGWireless/php-msf": {
       "type": "vcs",
       "url": "https://github.com/PGWireless/php-msf.git"
     },
-    "php-aop": {
+    "PGWireless/php-aop": {
       "type": "vcs",
       "url": "https://github.com/PGWireless/php-aop.git"
     },
-    "php-context": {
+    "PGWireless/php-context": {
       "type": "vcs",
       "url": "https://github.com/PGWireless/php-context.git"
     },
-    "php-log": {
+    "PGWireless/php-log": {
       "type": "vcs",
       "url": "https://github.com/PGWireless/php-log.git"
     },
-    "php-helper": {
+    "PGWireless/php-helper": {
       "type": "vcs",
       "url": "https://github.com/PGWireless/php-helper.git"
     },
-    "php-exception": {
+    "PGWireless/php-exception": {
       "type": "vcs",
       "url": "https://github.com/PGWireless/php-exception.git"
+    },
+    "PGWireless/plates": {
+      "type": "vcs",
+      "url": "https://github.com/PGWireless/plates.git"
     },
     "PGWireless/php-filter": {
       "type": "vcs",
