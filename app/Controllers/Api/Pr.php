@@ -53,7 +53,7 @@ class Pr extends Controller
         // 拼装调用Idallloc::getNextId()方法
         $idTask->getNextId(1);
         // 将同步任务的执行加入协程调度队列
-        $id = yield $idTask->coroutineSend();
+        $id = yield $idTask->coroutineSend(1000);
         // 结束请求并响应json数据格式
         $this->outputJson($id);
     }
@@ -206,5 +206,30 @@ class Pr extends Controller
         $result = yield $client->coroutinePost('http://www.baidu.com/');
 
         $this->outputView(['html' => $result['body']]);
+    }
+
+    /**
+     * 在一个请求中多次获取百度首页,自动进行DNS,自动通过Get拉取数据
+     *
+     * @throws \PG\MSF\Base\Exception
+     */
+    public function httpMultipleBaiduIndexGet()
+    {
+        /**
+         * @var $client \PG\MSF\Client\Http\Client
+         */
+        $client = $this->getContext()->getObjectPool()->get(\PG\MSF\Client\Http\Client::class);
+        $res1   = yield $client->coroutineGet('http://www.baidu.com/');
+        $res2   = yield $client->coroutineGet('http://www.baidu.com/');
+
+        $this->outputView(['html' => strlen($res1['body']) . '<hr />' . strlen($res2['body'])]);
+    }
+
+    /**
+     * 并行多次获取百度首页,自动进行DNS,自动通过Get拉取数据
+     */
+    public function httpConcurrentBaiduIndexGet()
+    {
+
     }
 }
