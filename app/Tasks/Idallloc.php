@@ -26,7 +26,6 @@ class Idallloc extends MongoDbTask
             'upsert' => true,
         ];
 
-
         $doc = $this->mongoCollection->findAndModify($condition, $update, [], $options);
         
         return isset($doc['last']) ? $doc['last'] : false;

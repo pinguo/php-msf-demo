@@ -53,10 +53,10 @@ $config['tcpClient']['set'] = [
     'package_body_offset' => 0,       //第几个字节开始计算长度
     'package_max_length' => 2000000,  //协议最大长度
 ];
-$config['tcpClient']['pack_tool'] = 'JsonPack';
+$config['tcp_client']['pack_tool'] = 'JsonPack';
 
 //协程超时时间
-$config['coroution']['timerOut'] = 5000;
+$config['coroutine']['timeout'] = 5000;
 
 //异步服务是否启动一个新进程（启动后异步效率会降低2倍，但维护连接池只有一个）
 $config['asyn_process_enable'] = false;
