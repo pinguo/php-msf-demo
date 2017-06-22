@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "59cbc31ce468d1f4a688a8ed1da7618e",
+    "content-hash": "11784e79a4e1057da97427dd46268ec6",
     "packages": [
         {
             "name": "PGWireless/php-aop",

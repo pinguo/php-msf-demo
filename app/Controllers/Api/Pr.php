@@ -112,7 +112,7 @@ class Pr extends Controller
             // 从对象池中获取Http Client
             $client     = $this->getContext()->getObjectPool()->get(\PG\MSF\Client\Http\Client::class);
             // 异步dns解析
-            $dnsACor    = $client->coroutineGetHttpClient('https://www.baidu.com');
+            $dnsACor    = $client->coroutineGetHttpClient('http://www.baidu.com');
             $dnsBCor    = $client->coroutineGetHttpClient('https://www.qiniu.com');
             // 获取dns解析的结果
             $httClientA = yield $dnsACor;
