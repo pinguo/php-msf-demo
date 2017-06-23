@@ -232,4 +232,27 @@ class Pr extends Controller
     {
 
     }
+
+    public function httpRedisTestAsynMaxCount()
+    {
+        $setKey1 = $this->getRedisPool('tw')->set('key1', 'val1');
+        $setKey2 = $this->getRedisPool('tw')->set('key2', 'val2');
+        $setKey3 = $this->getRedisPool('tw')->set('key3', 'val3');
+        $getKey1 = $this->getRedisPool('tw')->get('key1');
+        $getKey2 = $this->getRedisPool('tw')->get('key2');
+        $getKey3 = $this->getRedisPool('tw')->get('key3');
+
+        $ret1    = yield $setKey1;
+        $ret2    = yield $setKey2;
+        $ret3    = yield $setKey3;
+        $ret4    = yield $getKey1;
+        $ret5    = yield $getKey2;
+        $ret6    = yield $getKey3;
+
+        if ($ret1 && $ret2 && $ret3 && $ret4 && $ret5 && $ret6) {
+            $this->outputJson('ok');
+        } else {
+            $this->outputJson('error');
+        }
+    }
 }
