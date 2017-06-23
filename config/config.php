@@ -31,6 +31,13 @@ $config['server']['set'] = [
     'heartbeat_idle_time' => 120,//2分钟后没消息自动释放连接
     'heartbeat_check_interval' => 60,//1分钟检测一次
 ];
+
+$config['server']['async_io'] = [
+    'aio_mode' => SWOOLE_AIO_BASE,
+    'use_async_resolver' => false,
+    'dns_lookup_random' => true,
+];
+
 $config['server']['probuf_set'] = [
     'open_length_check' => 1,
     'package_length_type' => 'N',
