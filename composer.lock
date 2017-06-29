@@ -115,12 +115,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:PGWireless/php-filter.git",
-                "reference": "1513fb87b313aef57a64b165148c95b965166b4b"
+                "reference": "e4dc6aac2f80840ea67003776ff6492978d8a072"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PGWireless/php-filter/zipball/1513fb87b313aef57a64b165148c95b965166b4b",
-                "reference": "1513fb87b313aef57a64b165148c95b965166b4b",
+                "url": "https://api.github.com/repos/PGWireless/php-filter/zipball/e4dc6aac2f80840ea67003776ff6492978d8a072",
+                "reference": "e4dc6aac2f80840ea67003776ff6492978d8a072",
                 "shasum": ""
             },
             "require": {
@@ -141,7 +141,7 @@
                 "wiki": "https://github.com/PGWireless/php-filter/wiki",
                 "source": "https://github.com/PGWireless/php-filter"
             },
-            "time": "2017-06-06 14:01:50"
+            "time": "2017-06-26 11:08:53"
         },
         {
             "name": "PGWireless/php-helper",
@@ -186,12 +186,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:PGWireless/php-log.git",
-                "reference": "ceec0ed7ec6cf67f7d0ce68c1f71ef1e031957f9"
+                "reference": "ad9b9c9302026a197f6d5b9738fd2c7cc1d05cef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PGWireless/php-log/zipball/ceec0ed7ec6cf67f7d0ce68c1f71ef1e031957f9",
-                "reference": "ceec0ed7ec6cf67f7d0ce68c1f71ef1e031957f9",
+                "url": "https://api.github.com/repos/PGWireless/php-log/zipball/ad9b9c9302026a197f6d5b9738fd2c7cc1d05cef",
+                "reference": "ad9b9c9302026a197f6d5b9738fd2c7cc1d05cef",
                 "shasum": ""
             },
             "require": {
@@ -213,7 +213,7 @@
                 "wiki": "https://github.com/PGWireless/php-log/wiki",
                 "source": "https://github.com/PGWireless/php-log"
             },
-            "time": "2017-05-16 05:47:35"
+            "time": "2017-06-27 02:29:40"
         },
         {
             "name": "PGWireless/php-msf",
@@ -221,12 +221,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:PGWireless/php-msf.git",
-                "reference": "9cc42891550679c1162f2ee2c7afee62ec4d2464"
+                "reference": "7357e41d2e881bf4aac5ddc714c92e1aa91a2cb3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PGWireless/php-msf/zipball/9cc42891550679c1162f2ee2c7afee62ec4d2464",
-                "reference": "9cc42891550679c1162f2ee2c7afee62ec4d2464",
+                "url": "https://api.github.com/repos/PGWireless/php-msf/zipball/7357e41d2e881bf4aac5ddc714c92e1aa91a2cb3",
+                "reference": "7357e41d2e881bf4aac5ddc714c92e1aa91a2cb3",
                 "shasum": ""
             },
             "require": {
@@ -260,7 +260,7 @@
                 "source": "https://github.com/PGWireless/php-msf/tree/master",
                 "issues": "https://github.com/PGWireless/php-msf/issues"
             },
-            "time": "2017-06-22 04:53:31"
+            "time": "2017-06-29 07:47:35"
         },
         {
             "name": "PGWireless/plates",
