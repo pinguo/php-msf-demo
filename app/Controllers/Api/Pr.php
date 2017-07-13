@@ -7,6 +7,7 @@ namespace App\Controllers\Api;
 use PG\MSF\Controllers\Controller;
 use App\Models\Feed;
 use App\Tasks\Idallloc;
+use \PG\MSF\Client\ConcurrentClient;
 
 class Pr extends Controller
 {
@@ -76,6 +77,7 @@ class Pr extends Controller
                         $cli->get('/', function ($cli) use ($client, $apiA) {
                             $apiA = $cli->body;
                             swoole_async_dns_lookup("www.qiniu.com", function($host, $ip) use ($client, $apiA) {
+                                $this->outputJson('ok');return;
                                 $cli = new \swoole_http_client($ip, 443, true);
                                 $cli->setHeaders([
                                     'Host' => $host,
@@ -105,9 +107,9 @@ class Pr extends Controller
      */
     public function httpCoroutineMode()
     {
-        // 从Redis获取get apiCacheForABCoroutine
-        $getRedisCoroutine = $this->getRedisPool('tw')->get('apiCacheForABCoroutine');
-        $response          = yield $getRedisCoroutine;
+        // 从Redis获取get k1
+        $get      = $this->getRedisPool('tw')->get('k1');
+        $response = yield $get;
         if (!$response) {
             // 并行请求百度和七牛首页
             $requests = [
@@ -118,11 +120,11 @@ class Pr extends Controller
                 'qiniu' => [
                 ],
             ];
-
-            $results = yield \PG\MSF\Client\ConcurrentClient::requestByConcurrent($requests, $this);
-            // 写入redis,并不获取服务器返回结果（可大辐提升性能）
-            $this->getRedisPool('tw')->set('apiCacheForABCoroutine', $results['baidu']['body'] . $results['qiniu']['body']);
+            $results  = yield ConcurrentClient::request($requests, $this);
             $response = $results['baidu']['body'] . $results['qiniu']['body'];
+
+            // 写入redis,并不获取服务器返回结果（可大辐提升性能）
+            $this->getRedisPool('tw')->set('k1', $response)->break();
         }
 
         // 响应结果
@@ -276,6 +278,7 @@ class Pr extends Controller
         $ret5    = yield $getKey2;
         $ret6    = yield $getKey3;
 
+        $this->outputJson('ok');
         if ($ret1 && $ret2 && $ret3 && $ret4 && $ret5 && $ret6) {
             $this->outputJson('ok');
         } else {
@@ -300,7 +303,7 @@ class Pr extends Controller
         $this->getContext()->getLog()->profileStart('has-yield');
         for ($i = 1; $i < 100; $i++) {
             // 设置100个key到Redis集群,并且需要获取返回值
-            $sendSetKey[$i] = $this->getRedisProxy('cluster')->set('cs-' . $i, $i*$i);
+            $sendSetKey[$i] = $this->getRedisProxy('cluster')->set('cs2-' . $i, $i*$i);
         }
         for ($i = 1; $i < 100; $i++) {
             $res[$i] = yield $sendSetKey[$i];
@@ -311,5 +314,28 @@ class Pr extends Controller
         $this->getRedisProxy('master_slave')->set('user_id_111', 'name111');
 
         $this->outputJson('ok');
+    }
+
+    public function a()
+    {
+        return $this->b();
+    }
+
+    public function b()
+    {
+        return $this->c();
+    }
+
+    public function c()
+    {
+        $client = yield $this->getContext()->getObjectPool()->get(\PG\MSF\Client\Http\Client::class);
+        $data   = yield $client->coroutineGet('http://www.baidu.com/');
+        return $data;
+    }
+
+    public function httpTestC1()
+    {
+        $a = yield $this->a();
+        $this->outputJson($a);
     }
 }

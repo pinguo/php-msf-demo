@@ -29,11 +29,11 @@ $config['redis_proxy']['cluster'] = [
     'mode' => \PG\MSF\Marco::CLUSTER,
 ];
 
-$config['redis_proxy']['master_slave'] = [
-    'pools' => [
-        'tw', 'read_only',
-    ],
-    'mode' => \PG\MSF\Marco::MASTER_SLAVE,
-];
+//$config['redis_proxy']['master_slave'] = [
+//    'pools' => [
+//        'tw', 'read_only',
+//    ],
+//    'mode' => \PG\MSF\Marco::MASTER_SLAVE,
+//];
 
 return $config;
