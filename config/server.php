@@ -42,9 +42,6 @@ $config['server']['async_io'] = [
 //协程超时时间
 $config['coroutine']['timeout'] = 5000;
 
-//异步服务是否启动一个新进程
-$config['asyn_process_enable'] = false;
-
 //配置进程
 $config['config_manage_enable'] = true;
 

@@ -1,13 +1,4 @@
 #!/usr/bin/env sh
-###########################################
-#  Build PHP Env                          #
-#  for Windows/Mac/Linux                  #
-#                                         #
-#  Version: 1.0                           #
-#  Author: liuzhaohui@camera360.com       #
-#  Date: 2015/05/20                       #
-#  https://github.com/PGWireless/env      #
-###########################################
 VERSION=1.0
 
 # change to current dir
@@ -21,10 +12,10 @@ DOCKER_BIN=docker
 
 # modify this for your convenience
 SYSTEM_NAME=$(echo "$BASENAME" | tr '[A-Z]' '[a-z]')
-MAPPED_SSH_PORT=2204
+MAPPED_SSH_PORT=2205
 MAPPED_WEB_PORT=8000
-MAPPED_NGINX_PORT80=8080
-MAPPED_NGINX_PORT443=4443
+MAPPED_NGINX_PORT80=8081
+MAPPED_NGINX_PORT443=444
 CONTAINER_NAME="pinguo_${SYSTEM_NAME}_newdev"
 IMAGE_TAG="pinguo/${SYSTEM_NAME}:newdev"
 CONTAINER_HOSTNAME="newdev"
@@ -42,7 +33,7 @@ CMD_ARGS=$*
 # default command & build_env
 COMMAND='all'
 BUILD_ENV='.docker'
-FROM_IMAGE='docker.camera360.com:5000/pinguoops/env:php7.0-dev'
+FROM_IMAGE='docker.camera360.com:5000/pinguoops/env:php-msf'
 
 # help function
 docker_help () {
@@ -108,21 +99,6 @@ fi
 [ -z "$COMMAND" -o $COMMAND == 'h' -o $COMMAND == 'help' ] && docker_help
 [ $COMMAND == 'version' ] && display_version
 
-# auto start vm
-#if ! [ $COMMAND == 'connect' -o $COMMAND == 'c' ] && type $BOOT2DOCKER_BIN >/dev/null 2>&1 ; then
-#    if [[ ! -f "$HOME/.boot2docker/profile" ]]; then
-#        $BOOT2DOCKER_BIN config > $HOME/.boot2docker/profile
-#    fi
-#    $BOOT2DOCKER_BIN init
-#    $BOOT2DOCKER_BIN start
-#    if ! type $DOCKER_BIN >/dev/null 2>&1; then
-#        printf "\ngoing to (boot2docker)$PWD"
-#        $BOOT2DOCKER_BIN ssh -t "sh $PWD/build.sh $CMD_ARGS"
-#        read -p 'Press Enter key to exit..' 
-#        exit 0
-#    fi
-#fi
-
 # check system os
 if ! type $DOCKER_BIN >/dev/null 2>&1; then
     printf "\n\e[0;31mError:\e[mMake sure 'docker' is installed and global accessible.\n"
@@ -132,19 +108,6 @@ HOST_OS_ARCH=$( $DOCKER_BIN version 2>/dev/null | sed -n '/OS\/Arch/s/OS\/Arch.*
 HOST_OS=$( echo $HOST_OS_ARCH | awk -F/ '{print $1}' )
 
 DOCKER_IP=127.0.0.1
-#if type $BOOT2DOCKER_BIN >/dev/null 2>&1; then
-#    DOCKER_IP=$( $BOOT2DOCKER_BIN ip default )
-#    if [ $HOST_OS == 'windows' ]; then
-#        # fix docker path bug for windows
-#        # eval "$( $BOOT2DOCKER_BIN shellinit 2>/dev/null | sed  's,\\,\\\\,g' )"
-#        printf "\ngoing to (boot2docker)$PWD"
-#        $BOOT2DOCKER_BIN ssh -t "sh $PWD/build.sh $CMD_ARGS"
-#        read -p 'Press Enter key to exit..' 
-#        exit 0
-#    else
-#        eval "$( $BOOT2DOCKER_BIN shellinit 2>/dev/null )"
-#    fi  
-#fi
 
 # generate Dockerfile
 if [ $BUILD_ENV == '.docker' ]; then

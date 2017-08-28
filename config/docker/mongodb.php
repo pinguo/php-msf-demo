@@ -1,20 +1,13 @@
 <?php
 /**
- * @desc: MongoDb配置文件
- * @author: leandre <niulingyun@camera360.com>
- * @date: 2017/2/13
- * @copyright All rights reserved.
+ * MongoDb配置文件
+ *
+ * @author camera360_server@camera360.com
+ * @copyright Chengdu pinguo Technology Co.,Ltd.
  */
 
-/**
- * 本地环境
- */
 $config['mongodb']['test']['server'] = 'mongodb://127.0.0.1:27017';
 $config['mongodb']['test']['options'] = ['connect' => true];
 $config['mongodb']['test']['driverOptions'] = [];
-
-$config['mongodb']['hotpot']['server'] = 'mongodb://127.0.0.1:27017';
-$config['mongodb']['hotpot']['options'] = ['connect' => true];
-$config['mongodb']['hotpot']['driverOptions'] = [];
 
 return $config;

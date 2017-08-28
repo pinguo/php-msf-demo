@@ -1,5 +1,5 @@
 {
-  "name": "msf",
+  "name": "PGWireless/php-msf-demo",
   "type": "project",
   "license": "BSD-3-Clause",
   "support": {
@@ -28,10 +28,6 @@
       "type": "vcs",
       "url": "https://github.com/PGWireless/php-log.git"
     },
-    "PGWireless/php-helper": {
-      "type": "vcs",
-      "url": "https://github.com/PGWireless/php-helper.git"
-    },
     "PGWireless/php-exception": {
       "type": "vcs",
       "url": "https://github.com/PGWireless/php-exception.git"
@@ -39,16 +35,16 @@
     "PGWireless/plates": {
       "type": "vcs",
       "url": "https://github.com/PGWireless/plates.git"
-    },
-    "PGWireless/php-filter": {
-      "type": "vcs",
-      "url": "https://github.com/PGWireless/php-filter.git"
     }
   },
   "require": {
     "php": ">=7.0.0",
     "PGWireless/php-msf": "dev-master",
     "PGWireless/php-filter": "dev-master"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.7",
+    "kkguan/ide-helper": "dev-master"
   },
   "config": {
     "process-timeout": 1800,
