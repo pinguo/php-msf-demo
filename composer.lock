@@ -184,12 +184,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:PGWireless/php-msf.git",
-                "reference": "5e18c8558524f6bc7421b6b76db411a622c108d9"
+                "reference": "4f0a34ee572e5eee7ac434baf43385e1f7c2258e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PGWireless/php-msf/zipball/5e18c8558524f6bc7421b6b76db411a622c108d9",
-                "reference": "5e18c8558524f6bc7421b6b76db411a622c108d9",
+                "url": "https://api.github.com/repos/PGWireless/php-msf/zipball/4f0a34ee572e5eee7ac434baf43385e1f7c2258e",
+                "reference": "4f0a34ee572e5eee7ac434baf43385e1f7c2258e",
                 "shasum": ""
             },
             "require": {
@@ -226,7 +226,7 @@
                 "source": "https://github.com/PGWireless/php-msf/tree/master",
                 "issues": "https://github.com/PGWireless/php-msf/issues"
             },
-            "time": "2017-08-28T09:07:25+00:00"
+            "time": "2017-08-29T09:53:17+00:00"
         },
         {
             "name": "PGWireless/plates",
@@ -1891,20 +1891,20 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.3.6",
+            "version": "v3.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "ddc23324e6cfe066f3dd34a37ff494fa80b617ed"
+                "reference": "1d8c2a99c80862bdc3af94c1781bf70f86bccac0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/yaml/ddc23324e6cfe066f3dd34a37ff494fa80b617ed.zip",
-                "reference": "ddc23324e6cfe066f3dd34a37ff494fa80b617ed",
+                "url": "https://files.phpcomposer.com/files/symfony/yaml/1d8c2a99c80862bdc3af94c1781bf70f86bccac0.zip",
+                "reference": "1d8c2a99c80862bdc3af94c1781bf70f86bccac0",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.9"
+                "php": "^5.5.9|>=7.0.8"
             },
             "require-dev": {
                 "symfony/console": "~2.8|~3.0"
@@ -1942,7 +1942,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-23T12:43:26+00:00"
+            "time": "2017-07-29T21:54:42+00:00"
         },
         {
             "name": "webmozart/assert",

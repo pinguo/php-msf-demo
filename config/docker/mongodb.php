@@ -6,7 +6,7 @@
  * @copyright Chengdu pinguo Technology Co.,Ltd.
  */
 
-$config['mongodb']['test']['server'] = 'mongodb://127.0.0.1:27017';
+$config['mongodb']['test']['server'] = 'mongodb://192.168.1.106:27017';
 $config['mongodb']['test']['options'] = ['connect' => true];
 $config['mongodb']['test']['driverOptions'] = [];
 

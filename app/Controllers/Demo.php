@@ -9,6 +9,7 @@
 namespace App\Controllers;
 
 use PG\MSF\Controllers\Controller;
+use App\Models\Demo as DemoModel;
 
 class Demo extends Controller
 {
@@ -16,5 +17,34 @@ class Demo extends Controller
     {
         $ids = $this->getConfig()->get('params.mock_ids', []);
         $this->outputJson($ids);
+    }
+
+    public function actionGetMockFromModel()
+    {
+        /**
+         * @var DemoModel $demoModel
+         */
+        $demoModel = $this->getObject(DemoModel::class, [1, 2]);
+        $ids       = $demoModel->getMockIds();
+        $this->outputJson($ids);
+    }
+
+    public function actionTplView()
+    {
+        $data = [
+            'title'    => 'MSF Demo View',
+            'friends'  => [
+                [
+                    'name' => 'Rango',
+                ],
+                [
+                    'name' => '鸟哥',
+                ],
+                [
+                    'name' => '小马哥',
+                ],
+            ]
+        ];
+        $this->outputView($data);
     }
 }

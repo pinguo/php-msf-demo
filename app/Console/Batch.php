@@ -5,7 +5,7 @@ use PG\MSF\Console\Controller;
 
 class Batch extends Controller
 {
-    public function run()
+    public function actionRun()
     {
         echo '命令行示例';
     }

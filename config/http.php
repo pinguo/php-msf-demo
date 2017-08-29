@@ -14,5 +14,6 @@ $config['http_server']['socket']  = '0.0.0.0';
 $config['http']['domain']         = 'http://localhost:8000';
 // http访问时默认方法
 $config['http']['default_method'] = 'Index';
-
+// dns缓存有效时间，单位秒
+$config['http']['dns']['expire']  = 10;
 return $config;

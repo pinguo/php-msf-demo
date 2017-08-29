@@ -49,6 +49,6 @@ $config['config_manage_enable'] = true;
 $config['user_timer_enable'] = false;
 
 //是否启用自动reload
-$config['auto_reload_enable'] = false;
+$config['auto_reload_enable'] = true;
 
 return $config;
