@@ -42,10 +42,6 @@
     "PGWireless/php-msf": "dev-master",
     "PGWireless/php-filter": "dev-master"
   },
-  "require-dev": {
-    "phpunit/phpunit": "^5.7",
-    "kkguan/ide-helper": "dev-master"
-  },
   "config": {
     "process-timeout": 1800,
     "vendor-dir": "./vendor/"
