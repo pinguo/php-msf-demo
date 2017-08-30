@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4f63defe2ba9e06c078f109461dcaebc",
+    "content-hash": "fc1824f44129631f94c1d37967073aa9",
     "packages": [
         {
             "name": "PGWireless/php-aop",
@@ -110,40 +110,6 @@
             "time": "2017-08-24T06:07:16+00:00"
         },
         {
-            "name": "PGWireless/php-filter",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:PGWireless/php-filter.git",
-                "reference": "67efae4ccab02a845830f843baed9bc7e33fbabf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/PGWireless/php-filter/zipball/67efae4ccab02a845830f843baed9bc7e33fbabf",
-                "reference": "67efae4ccab02a845830f843baed9bc7e33fbabf",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "PG\\Filter\\": "src"
-                }
-            },
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "Pinguo PHP filter lib",
-            "support": {
-                "issues": "https://github.com/PGWireless/php-filter/issues?state=open",
-                "wiki": "https://github.com/PGWireless/php-filter/wiki",
-                "source": "https://github.com/PGWireless/php-filter"
-            },
-            "time": "2017-06-30T02:33:04+00:00"
-        },
-        {
             "name": "PGWireless/php-log",
             "version": "dev-master",
             "source": {
@@ -184,12 +150,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:PGWireless/php-msf.git",
-                "reference": "4d79f3d907ec27fb29cc9235615a1b68558b813c"
+                "reference": "5e5f330bf3f4097769c2a403c2a92813a76b9d73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PGWireless/php-msf/zipball/4d79f3d907ec27fb29cc9235615a1b68558b813c",
-                "reference": "4d79f3d907ec27fb29cc9235615a1b68558b813c",
+                "url": "https://api.github.com/repos/PGWireless/php-msf/zipball/5e5f330bf3f4097769c2a403c2a92813a76b9d73",
+                "reference": "5e5f330bf3f4097769c2a403c2a92813a76b9d73",
                 "shasum": ""
             },
             "require": {
@@ -203,10 +169,6 @@
                 "pgwireless/php-log": "dev-master",
                 "pgwireless/plates": "dev-master",
                 "php": ">=7.0"
-            },
-            "require-dev": {
-                "kkguan/ide-helper": "dev-master",
-                "phpunit/phpunit": "^5.7"
             },
             "type": "library",
             "autoload": {
@@ -226,7 +188,7 @@
                 "source": "https://github.com/PGWireless/php-msf/tree/master",
                 "issues": "https://github.com/PGWireless/php-msf/issues"
             },
-            "time": "2017-08-30T02:07:03+00:00"
+            "time": "2017-08-30T02:59:13+00:00"
         },
         {
             "name": "PGWireless/plates",
@@ -648,8 +610,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "pgwireless/php-msf": 20,
-        "pgwireless/php-filter": 20
+        "pgwireless/php-msf": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

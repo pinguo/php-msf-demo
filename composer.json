@@ -39,8 +39,7 @@
   },
   "require": {
     "php": ">=7.0.0",
-    "PGWireless/php-msf": "dev-master",
-    "PGWireless/php-filter": "dev-master"
+    "PGWireless/php-msf": "dev-master"
   },
   "config": {
     "process-timeout": 1800,
