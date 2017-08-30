@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:PGWireless/php-aop.git",
-                "reference": "7690c64add24fe8914d69bf1f8827212d89aabac"
+                "reference": "1193b42eeb47fb5dd148a51b9f370e30f2bf5afd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PGWireless/php-aop/zipball/7690c64add24fe8914d69bf1f8827212d89aabac",
-                "reference": "7690c64add24fe8914d69bf1f8827212d89aabac",
+                "url": "https://api.github.com/repos/PGWireless/php-aop/zipball/1193b42eeb47fb5dd148a51b9f370e30f2bf5afd",
+                "reference": "1193b42eeb47fb5dd148a51b9f370e30f2bf5afd",
                 "shasum": ""
             },
             "require": {
@@ -38,7 +38,7 @@
                 "source": "https://github.com/PGWireless/php-aop/tree/master",
                 "issues": "https://github.com/PGWireless/php-aop/issues"
             },
-            "time": "2017-08-24T15:16:43+00:00"
+            "time": "2017-08-29T15:53:36+00:00"
         },
         {
             "name": "PGWireless/php-context",
@@ -184,12 +184,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:PGWireless/php-msf.git",
-                "reference": "4f0a34ee572e5eee7ac434baf43385e1f7c2258e"
+                "reference": "4d79f3d907ec27fb29cc9235615a1b68558b813c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PGWireless/php-msf/zipball/4f0a34ee572e5eee7ac434baf43385e1f7c2258e",
-                "reference": "4f0a34ee572e5eee7ac434baf43385e1f7c2258e",
+                "url": "https://api.github.com/repos/PGWireless/php-msf/zipball/4d79f3d907ec27fb29cc9235615a1b68558b813c",
+                "reference": "4d79f3d907ec27fb29cc9235615a1b68558b813c",
                 "shasum": ""
             },
             "require": {
@@ -226,7 +226,7 @@
                 "source": "https://github.com/PGWireless/php-msf/tree/master",
                 "issues": "https://github.com/PGWireless/php-msf/issues"
             },
-            "time": "2017-08-29T09:53:17+00:00"
+            "time": "2017-08-30T02:07:03+00:00"
         },
         {
             "name": "PGWireless/plates",
