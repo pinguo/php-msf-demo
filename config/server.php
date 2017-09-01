@@ -7,7 +7,7 @@
  */
 
 // server服务进程标题前缀
-$config['server']['process_title'] = 'msf-hotpot';
+$config['server']['process_title'] = 'msf-demo';
 // server服务运行时目录
 $config['server']['runtime_path']  = RUNTIME_DIR . '/';
 // server服务运行时pid目录

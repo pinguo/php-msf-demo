@@ -1,4 +1,14 @@
 #!/usr/bin/env sh
+###########################################
+#  Build PHP Env                          #
+#  for Windows/Mac/Linux                  #
+#                                         #
+#  Version: 1.1                           #
+#  Author: liuzhaohui@camera360.com       #
+#  Date: 2015/05/20                       #
+###########################################
+
+#!/usr/bin/env sh
 VERSION=1.0
 
 # change to current dir
@@ -7,7 +17,6 @@ cd $CURRENT_DIR
 BASENAME=$(basename $PWD)
 HOSTNAME=$(hostname)
 
-BOOT2DOCKER_BIN=docker-machine
 DOCKER_BIN=docker
 
 # modify this for your convenience
@@ -202,18 +211,14 @@ docker_usage_next_step () {
     printf "\n"
     printf "\n(2) Testing with a url"
     printf "\n a. Add dns to your hosts file, like"
-    printf "\n   192.168.59.103 demo.camera360.com"
     printf "\n b. Visit the following url in web brower"
-    printf "\n   http://demo.camera360.com/demo/test"
     printf "\n"
     printf "\n Or, You can also use charles to make DNS Spoofing instead of edit your hosts file"
     printf "\n Thatis, tools-->DNS Spoofing，add"
-    printf "\n   Host Name：demo.camera360.com"
     printf "\n   Adress：$DOCKER_IP"
     printf "\n And set you web brower with charles for your proxy"
     printf "\n"
     printf "\n For more info, please read README.md"
-    printf "\n https://github.com/PGWireless/env/blob/master/README.md "
     printf "\n"
 
 }
@@ -286,16 +291,6 @@ docker_restart_container () {
     fi
 }
 
-docker_connect () {
-    IP=$( $BOOT2DOCKER_BIN ip default )
-    if [ -f $BUILD_ENV/id_rsa ]; then
-        chmod 600 $BUILD_ENV/id_rsa
-        ssh -p $MAPPED_SSH_PORT -i $BUILD_ENV/id_rsa worker@$IP
-    else
-        ssh -p $MAPPED_SSH_PORT worker@$IP
-    fi
-}
-
 show_current_info () {
     printf "\n\e[0;34mCURRENT\e[m"
     printf "\nHOST OS/Arch : $HOST_OS_ARCH"
@@ -326,9 +321,6 @@ case "$COMMAND" in
     rm)
         docker_rm_container
         docker_rm_image
-        ;;
-    connect|c)
-        docker_connect
         ;;
     all|a)
         show_current_info
