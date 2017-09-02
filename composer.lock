@@ -150,12 +150,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:PGWireless/php-msf.git",
-                "reference": "88acd3e961a0003fa7c91dffe2aebcdcb1a3cb1b"
+                "reference": "91a43e332da8a8824acaacfb048799a4f1498c7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PGWireless/php-msf/zipball/88acd3e961a0003fa7c91dffe2aebcdcb1a3cb1b",
-                "reference": "88acd3e961a0003fa7c91dffe2aebcdcb1a3cb1b",
+                "url": "https://api.github.com/repos/PGWireless/php-msf/zipball/91a43e332da8a8824acaacfb048799a4f1498c7a",
+                "reference": "91a43e332da8a8824acaacfb048799a4f1498c7a",
                 "shasum": ""
             },
             "require": {
@@ -188,7 +188,7 @@
                 "source": "https://github.com/PGWireless/php-msf/tree/master",
                 "issues": "https://github.com/PGWireless/php-msf/issues"
             },
-            "time": "2017-08-31T12:19:35+00:00"
+            "time": "2017-09-02T15:05:12+00:00"
         },
         {
             "name": "PGWireless/plates",
