@@ -1,4 +1,7 @@
-##### msf app
+# PHP-MSF DEMO
 
-项目示例
+PHP微服务框架即“Micro Service Framework For PHP”示例项目
 
+# LICENSE
+
+GNU General Public License, version 2 see [http://www.apache.org/licenses/LICENSE-2.0.html](https://www.gnu.org/licenses/gpl-2.0.html)
