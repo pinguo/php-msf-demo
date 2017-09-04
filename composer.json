@@ -2,10 +2,6 @@
   "name": "pinguo/php-msf-demo",
   "type": "project",
   "license": "GPL",
-  "support": {
-    "issues": "https://github.com/PGWireless/php-msf",
-    "source": "https://github.com/PGWireless/php-msf"
-  },
   "prefer-stable": true,
   "repositories": {
     "packagist": {
@@ -15,7 +11,7 @@
   },
   "require": {
     "php": ">=7.0.0",
-    "PGWireless/php-msf": "dev-master"
+    "pinguo/php-msf": "dev-master"
   },
   "config": {
     "process-timeout": 1800,
