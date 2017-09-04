@@ -1,7 +1,7 @@
 {
-  "name": "PGWireless/php-msf-demo",
+  "name": "pinguo/php-msf-demo",
   "type": "project",
-  "license": "BSD-3-Clause",
+  "license": "GPL",
   "support": {
     "issues": "https://github.com/PGWireless/php-msf",
     "source": "https://github.com/PGWireless/php-msf"
@@ -11,30 +11,6 @@
     "packagist": {
       "type": "composer",
       "url": "https://packagist.phpcomposer.com"
-    },
-    "PGWireless/php-msf": {
-      "type": "vcs",
-      "url": "https://github.com/PGWireless/php-msf.git"
-    },
-    "PGWireless/php-aop": {
-      "type": "vcs",
-      "url": "https://github.com/PGWireless/php-aop.git"
-    },
-    "PGWireless/php-context": {
-      "type": "vcs",
-      "url": "https://github.com/PGWireless/php-context.git"
-    },
-    "PGWireless/php-log": {
-      "type": "vcs",
-      "url": "https://github.com/PGWireless/php-log.git"
-    },
-    "PGWireless/php-exception": {
-      "type": "vcs",
-      "url": "https://github.com/PGWireless/php-exception.git"
-    },
-    "PGWireless/plates": {
-      "type": "vcs",
-      "url": "https://github.com/PGWireless/plates.git"
     }
   },
   "require": {
