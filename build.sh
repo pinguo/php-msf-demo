@@ -42,7 +42,12 @@ CMD_ARGS=$*
 # default command & build_env
 COMMAND='all'
 BUILD_ENV='.docker'
-FROM_IMAGE='docker.camera360.com:5000/pinguoops/env:php-msf'
+# 公网
+FROM_IMAGE='registry.cn-hangzhou.aliyuncs.com/pinguo-ops/php-msf-docker:latest'
+# 阿里云内网
+#FROM_IMAGE='registry-internal.cn-hangzhou.aliyuncs.com/pinguo-ops/php-msf-docker:latest'
+# 阿里云VPC网络
+#FROM_IMAGE='registry-vpc.cn-hangzhou.aliyuncs.com/pinguo-ops/php-msf-docker:latest'
 
 # help function
 docker_help () {
@@ -65,7 +70,6 @@ docker_help () {
     printf  "\n\tstop|s       - stop current environment"
     printf  "\n\trm           - remove current env image"
     printf  "\n\tall|a        - build and run current environment(default)"
-    printf  "\n\tconnect|c    - connect current env"
     printf  "\n\thelp|h       - display this help"
     printf  "\n\tversion      - display version"
     printf  "\n"
@@ -134,7 +138,7 @@ echo "FROM $FROM_IMAGE
 # Uncomment the following line if you need init.sh
 #ADD init.sh /home/worker/bin/
 " > $project_dockerfile
-fi 
+fi
 
 if [ ! -f $project_init_shell_file ]; then
 echo '#!/bin/bash
@@ -180,7 +184,7 @@ fi
 docker_exit () {
     # windows
     if [[ "$HOST_OS" == "windows" ]]; then
-        read -p 'Press Enter key to exit..' 
+        read -p 'Press Enter key to exit..'
     fi
     exit $@
 }
@@ -298,7 +302,7 @@ show_current_info () {
     printf "\nPWD     : $PWD\n"
 }
 
-# do 
+# do
 # login to docker hub
 # docker_login
 
@@ -339,6 +343,6 @@ esac
 
 # windows
 if [[ "$HOST_OS" == "windows" ]]; then
-    read -p 'Press Enter key to exit..' 
+    read -p 'Press Enter key to exit..'
 fi
 
