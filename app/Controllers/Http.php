@@ -71,7 +71,8 @@ class Http extends Controller
             'http://www.baidu.com/',
             [
                 'url'    => 'http://www.baidu.com/',
-                'method' => 'POST'
+                'method' => 'POST',
+                'data'   => ['a' => 'b'],
             ],
         ];
 

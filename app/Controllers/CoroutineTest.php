@@ -61,7 +61,7 @@ class CoroutineTest extends Controller
     public function actionCoroutineMode()
     {
         // 从Redis获取get apiCacheForABCoroutine
-        $response = yield $this->getRedisPool('tw')->get('apiCacheForABCoroutine');
+        $response = yield $this->getRedisPool('p1')->get('apiCacheForABCoroutine');
 
         if (!$response) {
             // 从远程拉取数据
@@ -77,12 +77,12 @@ class CoroutineTest extends Controller
             $results = yield $client->goConcurrent($request);
 
             // 写入redis
-            $this->getRedisPool('tw')->set('apiCacheForABCoroutine', $results[0]['body'] . $results[1]['body'])->break();
+            $this->getRedisPool('p1')->set('apiCacheForABCoroutine', $results[0]['body'] . $results[1]['body'])->break();
             $response   = $results[0]['body'] . $results[1]['body'];
         }
 
         // 响应结果
-        $this->outputJson($response);
+        $this->output($response);
     }
 
     // 姿势一

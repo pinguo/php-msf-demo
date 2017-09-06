@@ -14,6 +14,6 @@ class Welcome extends Controller
 {
     public function actionIndex()
     {
-        $this->outputJson('hello world!');
+        $this->output('hello world!');
     }
 }
