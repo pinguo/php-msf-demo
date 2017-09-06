@@ -21,14 +21,13 @@ DOCKER_BIN=docker
 
 # modify this for your convenience
 SYSTEM_NAME=$(echo "$BASENAME" | tr '[A-Z]' '[a-z]')
-MAPPED_SSH_PORT=2205
-MAPPED_WEB_PORT=8000
-MAPPED_NGINX_PORT80=8081
-MAPPED_NGINX_PORT443=444
+MAPPED_SSH_PORT=2202
+MAPPED_WEB_PORT=80
+MAPPED_NGINX_PORT443=443
 CONTAINER_NAME="pinguo_${SYSTEM_NAME}_newdev"
 IMAGE_TAG="pinguo/${SYSTEM_NAME}:newdev"
 CONTAINER_HOSTNAME="newdev"
-CARGS=" -d -p $MAPPED_SSH_PORT:22 -p $MAPPED_NGINX_PORT80:80 -p $MAPPED_NGINX_PORT443:443 -p $MAPPED_WEB_PORT:8000"
+CARGS=" -d -p $MAPPED_SSH_PORT:22 -p $MAPPED_WEB_PORT:8000 -p 8000:8000 -p $MAPPED_NGINX_PORT443:443"
 CARGS="$CARGS --hostname=$CONTAINER_HOSTNAME --name $CONTAINER_NAME "
 
 ## add volume
@@ -42,7 +41,7 @@ CMD_ARGS=$*
 # default command & build_env
 COMMAND='all'
 BUILD_ENV='.docker'
-FROM_IMAGE='docker.camera360.com:5000/pinguoops/env:php-msf'
+FROM_IMAGE='daocloud.io/leandre/php-msf-docker'
 
 # help function
 docker_help () {
