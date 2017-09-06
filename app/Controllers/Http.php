@@ -53,7 +53,7 @@ class Http extends Controller
          * @var Client $client
          */
         $client  = $this->getObject(Client::class);
-        $result = yield $client->goSinglePost('http://www.baidu.com/');
+        $result = yield $client->goSinglePost('http://www.baidu.com/', ['a' => 'b']);
 
         $this->outputView(['html' => $result['body']]);
     }
