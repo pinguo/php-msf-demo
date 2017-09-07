@@ -2,7 +2,6 @@
   "name": "pinguo/php-msf-demo",
   "type": "project",
   "license": "GPL",
-  "prefer-stable": true,
   "repositories": {
     "packagist": {
       "type": "composer",
@@ -11,13 +10,14 @@
   },
   "require": {
     "php": ">=7.0.0",
-    "pinguo/php-msf": "dev-master"
+    "pinguo/php-msf": ">=3.0.0"
   },
   "config": {
     "process-timeout": 1800,
     "vendor-dir": "./vendor/"
   },
   "minimum-stability": "dev",
+  "prefer-stable": true,
   "extra": {
   },
   "autoload": {
