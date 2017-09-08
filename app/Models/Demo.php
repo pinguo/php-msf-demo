@@ -20,7 +20,7 @@ class Demo extends Model
         $this->pro1 = $pro1;
         $this->pro2 = $pro2;
         $this->pro3 = "protected";
-        $this->pro2 = "private";
+        $this->pro4 = "private";
     }
 
     public function getMockIds()
@@ -33,5 +33,6 @@ class Demo extends Model
     {
         parent::destroy();
         $this->pro3 = null;
+        $this->pro4 = null;
     }
 }
