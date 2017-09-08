@@ -9,7 +9,7 @@ class Idallloc extends MongoDbTask
      * 当前要用的配置  配置名，db名，collection名
      * @var array
      */
-    public $mongoConf = ['test', 'demo', 'idalloc'];
+    protected $mongoConf = ['test', 'demo', 'idalloc'];
     
     public function getNextId($key)
     {
