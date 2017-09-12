@@ -4,8 +4,72 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "493108b9998d53bd40874869b6d9a474",
+    "content-hash": "09c3ef3426522a3459ad98b4a1d53010",
     "packages": [
+        {
+            "name": "alcaeus/mongo-php-adapter",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alcaeus/mongo-php-adapter.git",
+                "reference": "052cd5d1f0698b96993d8b1b613ff9c6d25b912f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/alcaeus/mongo-php-adapter/052cd5d1f0698b96993d8b1b613ff9c6d25b912f.zip",
+                "reference": "052cd5d1f0698b96993d8b1b613ff9c6d25b912f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-hash": "*",
+                "ext-mongodb": "^1.2.0",
+                "mongodb/mongodb": "^1.0.1",
+                "php": "^5.6 || ^7.0"
+            },
+            "provide": {
+                "ext-mongo": "1.6.14"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7 || ^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mongo": "lib/Mongo"
+                },
+                "psr-4": {
+                    "Alcaeus\\MongoDbAdapter\\": "lib/Alcaeus/MongoDbAdapter"
+                },
+                "files": [
+                    "lib/Mongo/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "alcaeus",
+                    "email": "alcaeus@alcaeus.org"
+                },
+                {
+                    "name": "Olivier Lechevalier",
+                    "email": "olivier.lechevalier@gmail.com"
+                }
+            ],
+            "description": "Adapter to provide ext-mongo interface on top of mongo-php-libary",
+            "keywords": [
+                "database",
+                "mongodb"
+            ],
+            "time": "2017-08-04T16:13:33+00:00"
+        },
         {
             "name": "flexihash/flexihash",
             "version": "v2.0.2",
@@ -115,6 +179,64 @@
                 "yml"
             ],
             "time": "2016-02-11T16:21:17+00:00"
+        },
+        {
+            "name": "mongodb/mongodb",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mongodb/mongo-php-library.git",
+                "reference": "a307dd60e71e1291c60927ea4f3a1905146063f5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/mongodb/mongo-php-library/a307dd60e71e1291c60927ea4f3a1905146063f5.zip",
+                "reference": "a307dd60e71e1291c60927ea4f3a1905146063f5",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mongodb": "^1.2.0",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MongoDB\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Jeremy Mikola",
+                    "email": "jmikola@gmail.com"
+                },
+                {
+                    "name": "Hannes Magnusson",
+                    "email": "bjori@mongodb.com"
+                },
+                {
+                    "name": "Derick Rethans",
+                    "email": "github@derickrethans.nl"
+                }
+            ],
+            "description": "MongoDB driver library",
+            "homepage": "https://jira.mongodb.org/browse/PHPLIB",
+            "keywords": [
+                "database",
+                "driver",
+                "mongodb",
+                "persistence"
+            ],
+            "time": "2017-02-16T18:40:32+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -258,36 +380,6 @@
             "time": "2017-09-07T02:25:27+00:00"
         },
         {
-            "name": "pinguo/php-exception",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/pinguo/php-exception.git",
-                "reference": "9a9e7bce1a9ea1b04477d503cc4f11ca67cfa400"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/pinguo/php-exception/9a9e7bce1a9ea1b04477d503cc4f11ca67cfa400.zip",
-                "reference": "9a9e7bce1a9ea1b04477d503cc4f11ca67cfa400",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "PG\\Exception\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL"
-            ],
-            "description": "Pinguo PHP exception",
-            "time": "2017-09-04T08:56:00+00:00"
-        },
-        {
             "name": "pinguo/php-log",
             "version": "1.0.0",
             "source": {
@@ -320,16 +412,16 @@
         },
         {
             "name": "pinguo/php-msf",
-            "version": "3.0.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pinguo/php-msf.git",
-                "reference": "78c53a48cf8ac7796884c16a5f81006961d2e4a1"
+                "reference": "094f34e1f316e744944e5c395df0ace71048d758"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/pinguo/php-msf/78c53a48cf8ac7796884c16a5f81006961d2e4a1.zip",
-                "reference": "78c53a48cf8ac7796884c16a5f81006961d2e4a1",
+                "url": "https://files.phpcomposer.com/files/pinguo/php-msf/094f34e1f316e744944e5c395df0ace71048d758.zip",
+                "reference": "094f34e1f316e744944e5c395df0ace71048d758",
                 "shasum": ""
             },
             "require": {
@@ -339,7 +431,6 @@
                 "php": ">=7.0",
                 "pinguo/php-aop": "1.0.0",
                 "pinguo/php-context": "1.0.0",
-                "pinguo/php-exception": "1.0.0",
                 "pinguo/php-log": "1.0.0",
                 "pinguo/plates": "3.3.1"
             },
@@ -361,7 +452,7 @@
             ],
             "description": "Pinguo Micro Service Framework For PHP",
             "homepage": "https://github.com/pinguo/php-msf",
-            "time": "2017-09-08T13:05:02+00:00"
+            "time": "2017-09-12T05:16:28+00:00"
         },
         {
             "name": "pinguo/plates",
@@ -464,7 +555,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "pinguo/php-msf": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
