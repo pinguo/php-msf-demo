@@ -1,5 +1,7 @@
 {
   "verbose": true,
-  "ignore": [".idea"],
+  "ignore": [
+    ".idea"
+  ],
   "signal": "SIGUSR1"
 }
