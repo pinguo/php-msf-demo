@@ -20,5 +20,6 @@ $config['fileHeader']['zip']  = ['Content-Type: application/zip'];
 $config['fileHeader']['mp3']  = ['Content-Type: audio/mpeg'];
 $config['fileHeader']['mp4']  = ['Content-Type: audio/mpeg'];
 $config['fileHeader']['swf']  = ['Content-Type: application/x-shockwave-flash'];
+$config['fileHeader']['ico']  = ['Content-Type: image/x-icon'];
 
 return $config;
