@@ -1,8 +1,18 @@
 <?php
+/**
+ * Demo Task
+ *
+ * 注意理论上本文件代码应该在Tasker进程中执行
+ */
+
 namespace App\Tasks;
 
 use \PG\MSF\Tasks\Task;
 
+/**
+ * Class Demo
+ * @package App\Tasks
+ */
 class Demo extends Task
 {
     /**
