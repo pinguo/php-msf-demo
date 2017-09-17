@@ -50,7 +50,7 @@ class Demo extends Controller
 
     public function actionSleep()
     {
-        yield $this->getObject(\PG\MSF\Coroutine\Sleep::class, [2000]);
+        yield $this->getObject(\PG\MSF\Coroutine\Sleep::class)->goSleep(2000);
         $this->outputJson(['status' => 200, 'msg' => 'ok']);
     }
 }
