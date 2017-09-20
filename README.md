@@ -1,4 +1,4 @@
-​​# PHP-MSF DEMO
+# PHP-MSF DEMO
 
 PHP微服务框架即“[Micro Service Framework For PHP](https://github.com/pinguo/php-msf)”示例项目
 
@@ -21,7 +21,7 @@ php server.php
 
 - php-msf-demo示例项目使用的是最新的[php-msf](https://github.com/pinguo/php-msf)代码，即dev-master分支，生产环境请使用release的相关版本。
 - 在有些环境中执行`php server.php`，由于`inotify`的原因并不能自动热更新代码，请尝试使用`nodemon --exec "php" server.php`
-- 框架文档 [PHP-MSF开发手册](https://pinguo.gitbooks.io/php-msf-docs/) 以及 [常见问题及其解决方式](https://pinguo.gitbooks.io/php-msf-docs/chapter-6/6.0-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.html)
+- 使用过程中如果有问题可以参见框架文档 [PHP-MSF开发手册](https://pinguo.gitbooks.io/php-msf-docs/) 以及 [常见问题及其解决方式](https://pinguo.gitbooks.io/php-msf-docs/chapter-6/6.0-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.html)
 
 
 # LICENSE
