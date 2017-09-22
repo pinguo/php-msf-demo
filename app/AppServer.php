@@ -21,8 +21,12 @@ class AppServer extends MSFServer
      */
     public function onInitTimer()
     {
-        swoole_timer_tick(1000, function ($timerId) {
+        $this->registerTimer(1000, function(\PG\MSF\Base\Core $runInstance, $timerId, $params) {
             echo "user timer echo 1s per\n";
+        });
+
+        $this->registerTimer(2000, function(\PG\MSF\Base\Core $runInstance, $timerId, $params) {
+            echo "user timer echo 2s per\n";
         });
     }
 }
