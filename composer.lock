@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "alcaeus/mongo-php-adapter",
-            "version": "1.1.2",
+            "version": "1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/alcaeus/mongo-php-adapter.git",
-                "reference": "052cd5d1f0698b96993d8b1b613ff9c6d25b912f"
+                "reference": "9f42213a51e12c0fc1ce4773840c34d8ab3afd6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/alcaeus/mongo-php-adapter/052cd5d1f0698b96993d8b1b613ff9c6d25b912f.zip",
-                "reference": "052cd5d1f0698b96993d8b1b613ff9c6d25b912f",
+                "url": "https://files.phpcomposer.com/files/alcaeus/mongo-php-adapter/9f42213a51e12c0fc1ce4773840c34d8ab3afd6f.zip",
+                "reference": "9f42213a51e12c0fc1ce4773840c34d8ab3afd6f",
                 "shasum": ""
             },
             "require": {
@@ -68,7 +68,7 @@
                 "database",
                 "mongodb"
             ],
-            "time": "2017-08-04T16:13:33+00:00"
+            "time": "2017-09-24T11:32:02+00:00"
         },
         {
             "name": "flexihash/flexihash",
@@ -416,12 +416,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pinguo/php-msf.git",
-                "reference": "1e5d54cdf0f7d1518e605c2c0807c99318c53e04"
+                "reference": "009477cf3ba149342981588c3f1ef8d9d8148d47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/pinguo/php-msf/1e5d54cdf0f7d1518e605c2c0807c99318c53e04.zip",
-                "reference": "1e5d54cdf0f7d1518e605c2c0807c99318c53e04",
+                "url": "https://files.phpcomposer.com/files/pinguo/php-msf/009477cf3ba149342981588c3f1ef8d9d8148d47.zip",
+                "reference": "009477cf3ba149342981588c3f1ef8d9d8148d47",
                 "shasum": ""
             },
             "require": {
@@ -452,7 +452,7 @@
             ],
             "description": "Pinguo Micro Service Framework For PHP",
             "homepage": "https://github.com/pinguo/php-msf",
-            "time": "2017-09-24T05:04:25+00:00"
+            "time": "2017-09-25T07:20:49+00:00"
         },
         {
             "name": "pinguo/plates",
