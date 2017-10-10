@@ -14,7 +14,7 @@ use PG\MSF\Client\Http\Client;
 class CoroutineTest extends Controller
 {
     /**
-     * 异步回调的方式实现(A && B) || C
+     * 异步回调的方式实现 C || (A && B)
      */
     public function actionCallBackMode()
     {
@@ -56,7 +56,7 @@ class CoroutineTest extends Controller
     }
 
     /**
-     * 协程的方式实现(A && B) || C
+     * 协程的方式实现 C || (A && B)
      */
     public function actionCoroutineMode()
     {
