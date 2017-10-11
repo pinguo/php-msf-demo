@@ -416,12 +416,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pinguo/php-msf.git",
-                "reference": "07afe3c7e2fe7ee9ce4bf56e3425d805535de2e8"
+                "reference": "06400b1c9b4ca15d498656449e4b973ca011c57b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/pinguo/php-msf/07afe3c7e2fe7ee9ce4bf56e3425d805535de2e8.zip",
-                "reference": "07afe3c7e2fe7ee9ce4bf56e3425d805535de2e8",
+                "url": "https://files.phpcomposer.com/files/pinguo/php-msf/06400b1c9b4ca15d498656449e4b973ca011c57b.zip",
+                "reference": "06400b1c9b4ca15d498656449e4b973ca011c57b",
                 "shasum": ""
             },
             "require": {
@@ -452,7 +452,7 @@
             ],
             "description": "Pinguo Micro Service Framework For PHP",
             "homepage": "https://github.com/pinguo/php-msf",
-            "time": "2017-10-10T09:16:57+00:00"
+            "time": "2017-10-11T02:00:54+00:00"
         },
         {
             "name": "pinguo/plates",
