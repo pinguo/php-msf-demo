@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         bootstrap="vendor/autoload.php"
+         colors="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         stopOnError="true"
+         stopOnFailure="true"
+         stopOnIncomplete="true"
+         stopOnSkipped="true"
+>
+    <php>
+        <var name="SERVER_HOST" value="http://127.0.0.1:8000" />
+    </php>
+    <testsuites>
+        <testsuite name="php-msf Test Suite">
+            <directory suffix="Test.php">./test/Base</directory>
+            <directory suffix="Test.php">./test/Http</directory>
+            <directory suffix="Test.php">./test/Tcp</directory>
+            <directory suffix="Test.php">./test/Rpc</directory>
+            <directory suffix="Test.php">./test/Redis</directory>
+            <directory suffix="Test.php">./test/MongoDB</directory>
+            <directory suffix="Test.php">./test/MySQL</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
