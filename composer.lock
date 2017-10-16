@@ -1157,16 +1157,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "6.4.1",
+            "version": "6.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "b770d8ba7e60295ee91d69d5a5e01ae833cac220"
+                "reference": "ae6e2e062ff55263c7b04374c190aca45872b26a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/sebastianbergmann/phpunit/b770d8ba7e60295ee91d69d5a5e01ae833cac220.zip",
-                "reference": "b770d8ba7e60295ee91d69d5a5e01ae833cac220",
+                "url": "https://files.phpcomposer.com/files/sebastianbergmann/phpunit/ae6e2e062ff55263c7b04374c190aca45872b26a.zip",
+                "reference": "ae6e2e062ff55263c7b04374c190aca45872b26a",
                 "shasum": ""
             },
             "require": {
@@ -1237,7 +1237,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-10-07T17:53:53+00:00"
+            "time": "2017-10-15T06:16:19+00:00"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -1397,12 +1397,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pinguo/php-msf.git",
-                "reference": "b20f5785a5300db81560a414027660d4d240a0d1"
+                "reference": "4522df0ea0f566010193077a4581ada52a8674ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/pinguo/php-msf/b20f5785a5300db81560a414027660d4d240a0d1.zip",
-                "reference": "b20f5785a5300db81560a414027660d4d240a0d1",
+                "url": "https://files.phpcomposer.com/files/pinguo/php-msf/4522df0ea0f566010193077a4581ada52a8674ec.zip",
+                "reference": "4522df0ea0f566010193077a4581ada52a8674ec",
                 "shasum": ""
             },
             "require": {
@@ -1433,7 +1433,7 @@
             ],
             "description": "Pinguo Micro Service Framework For PHP",
             "homepage": "https://github.com/pinguo/php-msf",
-            "time": "2017-10-12T16:23:25+00:00"
+            "time": "2017-10-16T12:17:26+00:00"
         },
         {
             "name": "pinguo/plates",
