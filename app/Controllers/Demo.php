@@ -8,6 +8,7 @@
 
 namespace App\Controllers;
 
+use PG\MSF\Client\Http\Client;
 use PG\MSF\Controllers\Controller;
 use App\Models\Demo as DemoModel;
 
@@ -52,5 +53,19 @@ class Demo extends Controller
     {
         yield $this->getObject(\PG\MSF\Coroutine\Sleep::class)->goSleep(2000);
         $this->outputJson(['status' => 200, 'msg' => 'ok']);
+    }
+
+    public function actionLocalResponse()
+    {
+        dump($this->getContext()->getInput()->request);
+        $this->output('ok');
+    }
+
+    public function actionLocalRequest()
+    {
+        $url = 'http://127.0.0.1:8000/Demo/LocalResponse?a=b';
+        yield $this->getObject(Client::class)->goSinglePost($url, ['c' => 'd']);
+
+        $this->output('ok');
     }
 }
