@@ -8,6 +8,7 @@
 
 namespace App\Controllers;
 
+use PG\I18N\I18N;
 use PG\MSF\Controllers\Controller;
 use App\Models\Demo as DemoModel;
 
@@ -52,5 +53,17 @@ class Demo extends Controller
     {
         yield $this->getObject(\PG\MSF\Coroutine\Sleep::class)->goSleep(2000);
         $this->outputJson(['status' => 200, 'msg' => 'ok']);
+    }
+
+    public function actionI18n()
+    {
+        // 这个最好在业务控制器基类里的构造方法初始化，这里只作为演示方便
+        I18N::getInstance(getInstance()->config->get('params.i18n', []));
+        $sayHi = [
+            'zh_cn' => I18N::t('demo.common', 'sayHi', ['name' => '品果微服务框架'], 'zh_CN'),
+            'en_us' => I18N::t('demo.common', 'sayHi', ['name' => 'msf'], 'en_US'),
+        ];
+
+        $this->outputJson(['data' => $sayHi, 'status' => 200, 'msg' => I18N::t('demo.error', 200, [], 'zh_CN')]);
     }
 }
