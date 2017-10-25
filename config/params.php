@@ -18,4 +18,15 @@ $config['params']['mock_ids'] = [
     '57de06b74b58d5471e66882f',
     '57d8b78f4b58d5311e6686d5',
 ];
+
+$config['params']['i18n'] = [
+    'demo' => [
+        'sourceLanguage' => 'en_us',
+        'basePath' => ROOT_PATH . '/languages',
+        'fileMap' => [
+            'common' => 'common.php',
+            'error' => 'error.php',
+        ]
+    ],
+];
 return $config;
