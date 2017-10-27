@@ -1424,12 +1424,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pinguo/php-i18n.git",
-                "reference": "687b1f3c8d0df7955acf8def5a219eaf82bb6b72"
+                "reference": "2fc7c563dd3c8781d374c9e30f62bdb13d33dde8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/pinguo/php-i18n/687b1f3c8d0df7955acf8def5a219eaf82bb6b72.zip",
-                "reference": "687b1f3c8d0df7955acf8def5a219eaf82bb6b72",
+                "url": "https://files.phpcomposer.com/files/pinguo/php-i18n/2fc7c563dd3c8781d374c9e30f62bdb13d33dde8.zip",
+                "reference": "2fc7c563dd3c8781d374c9e30f62bdb13d33dde8",
                 "shasum": ""
             },
             "require": {
@@ -1446,7 +1446,7 @@
                 "GPL"
             ],
             "description": "Pinguo PHP i18n lib",
-            "time": "2017-10-25T09:52:50+00:00"
+            "time": "2017-10-25T10:03:34+00:00"
         },
         {
             "name": "pinguo/php-log",
@@ -1485,12 +1485,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pinguo/php-msf.git",
-                "reference": "a21350e4a1955d407843492acd1914f40938ad09"
+                "reference": "7dd3dab0005575287e2313c01535085c34201fda"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/pinguo/php-msf/a21350e4a1955d407843492acd1914f40938ad09.zip",
-                "reference": "a21350e4a1955d407843492acd1914f40938ad09",
+                "url": "https://files.phpcomposer.com/files/pinguo/php-msf/7dd3dab0005575287e2313c01535085c34201fda.zip",
+                "reference": "7dd3dab0005575287e2313c01535085c34201fda",
                 "shasum": ""
             },
             "require": {
@@ -1504,7 +1504,8 @@
                 "pinguo/php-log": "1.0.0"
             },
             "suggest": {
-                "alcaeus/mongo-php-adapter": "^1.0"
+                "alcaeus/mongo-php-adapter": "^1.0",
+                "ext-amqp": ">=1.8.0"
             },
             "type": "library",
             "autoload": {
@@ -1521,7 +1522,7 @@
             ],
             "description": "Pinguo Micro Service Framework For PHP",
             "homepage": "https://github.com/pinguo/php-msf",
-            "time": "2017-10-23T15:43:15+00:00"
+            "time": "2017-10-27T09:23:53+00:00"
         },
         {
             "name": "psr/http-message",
