@@ -9,27 +9,42 @@
 namespace App\Controllers;
 
 use PG\MSF\Controllers\Controller;
+use PG\MSF\Queue\RabbitMQ;
 
 class Queue extends Controller
 {
     public function actionRedisEnqueue()
     {
         $redisQueue = $this->getObject(\PG\MSF\Queue\Redis::class, ['master_slave', true]);
-        $res = yield $redisQueue->set('queue1', json_encode(['name' => 'leandre', 'gender' => 'male']));
+        $res = yield $redisQueue->set(json_encode(['name' => 'leandre', 'gender' => 'male']));
         $this->outputJson($res);
     }
 
     public function actionRedisDequeue()
     {
         $redisQueue = $this->getObject(\PG\MSF\Queue\Redis::class, ['master_slave', true]);
-        $res = yield $redisQueue->get('queue1');
+        $res = yield $redisQueue->get();
         $this->outputJson($res);
     }
 
     public function actionRedisLen()
     {
         $redisQueue = $this->getObject(\PG\MSF\Queue\Redis::class, ['master_slave', true]);
-        $res = yield $redisQueue->len('queue1');
+        $res = yield $redisQueue->len();
+        $this->outputJson($res);
+    }
+
+    public function actionRabbitEnqueue()
+    {
+        $rabbit = $this->getObject(RabbitMQ::class, ['rabbit']);
+        $res = yield $rabbit->set(json_encode(['name' => 'msf', 'type' => 'framework']));
+        $this->outputJson($res);
+    }
+
+    public function actionRabbitDequeue()
+    {
+        $rabbit = $this->getObject(RabbitMQ::class, ['rabbit']);
+        $res = yield $rabbit->get();
         $this->outputJson($res);
     }
 }
