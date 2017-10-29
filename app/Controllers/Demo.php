@@ -8,7 +8,7 @@
 
 namespace App\Controllers;
 
-use PG\MSF\Client\Http\Client;
+use PG\I18N\I18N;
 use PG\MSF\Controllers\Controller;
 use App\Models\Demo as DemoModel;
 
@@ -55,17 +55,15 @@ class Demo extends Controller
         $this->outputJson(['status' => 200, 'msg' => 'ok']);
     }
 
-    public function actionLocalResponse()
+    public function actionI18n()
     {
-        dump($this->getContext()->getInput()->request);
-        $this->output('ok');
-    }
+        // 这个最好在业务控制器基类里的构造方法初始化，这里只作为演示方便
+        I18N::getInstance(getInstance()->config->get('params.i18n', []));
+        $sayHi = [
+            'zh_cn' => I18N::t('demo.common', 'sayHi', ['name' => '品果微服务框架'], 'zh_CN'),
+            'en_us' => I18N::t('demo.common', 'sayHi', ['name' => 'msf'], 'en_US'),
+        ];
 
-    public function actionLocalRequest()
-    {
-        $url = 'http://127.0.0.1:8000/Demo/LocalResponse?a=b';
-        yield $this->getObject(Client::class)->goSinglePost($url, ['c' => 'd']);
-
-        $this->output('ok');
+        $this->outputJson(['data' => $sayHi, 'status' => 200, 'msg' => I18N::t('demo.error', 200, [], 'zh_CN')]);
     }
 }
