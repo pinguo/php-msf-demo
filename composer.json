@@ -16,6 +16,9 @@
     "phpunit/phpunit": "^6.4",
     "guzzlehttp/guzzle": "^6.3"
   },
+  "require-dev": {
+    "kwn/php-rdkafka-stubs": "^1.0.2"
+  },
   "config": {
     "process-timeout": 1800,
     "vendor-dir": "./vendor/"

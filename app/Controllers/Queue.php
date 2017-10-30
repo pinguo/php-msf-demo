@@ -9,6 +9,7 @@
 namespace App\Controllers;
 
 use PG\MSF\Controllers\Controller;
+use PG\MSF\Queue\Kafka;
 use PG\MSF\Queue\RabbitMQ;
 
 class Queue extends Controller
@@ -45,6 +46,20 @@ class Queue extends Controller
     {
         $rabbit = $this->getObject(RabbitMQ::class, ['rabbit']);
         $res = yield $rabbit->get();
+        $this->outputJson($res);
+    }
+
+    public function actionKafkaEnqueue()
+    {
+        $kafka = $this->getObject(Kafka::class, ['local']);
+        $res = yield $kafka->set(json_encode(['name' => 'camera360', 'type' => 'app']));
+        $this->outputJson($res);
+    }
+
+    public function actionKafkaDequeue()
+    {
+        $kafka = $this->getObject(Kafka::class, ['local']);
+        $res = yield $kafka->get();
         $this->outputJson($res);
     }
 }
