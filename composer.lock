@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "338fe941442b3b8d866e6348f977e5be",
+    "content-hash": "5e3deccb68d7c63163d0a931a0b37874",
     "packages": [
         {
             "name": "alcaeus/mongo-php-adapter",
@@ -1485,12 +1485,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pinguo/php-msf.git",
-                "reference": "7dd3dab0005575287e2313c01535085c34201fda"
+                "reference": "83fd8cc9dec05192e0f03627c77a5ae10eebe57d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/pinguo/php-msf/7dd3dab0005575287e2313c01535085c34201fda.zip",
-                "reference": "7dd3dab0005575287e2313c01535085c34201fda",
+                "url": "https://files.phpcomposer.com/files/pinguo/php-msf/83fd8cc9dec05192e0f03627c77a5ae10eebe57d.zip",
+                "reference": "83fd8cc9dec05192e0f03627c77a5ae10eebe57d",
                 "shasum": ""
             },
             "require": {
@@ -1522,7 +1522,7 @@
             ],
             "description": "Pinguo Micro Service Framework For PHP",
             "homepage": "https://github.com/pinguo/php-msf",
-            "time": "2017-10-27T09:23:53+00:00"
+            "time": "2017-10-30T03:17:46+00:00"
         },
         {
             "name": "psr/http-message",
@@ -2271,7 +2271,42 @@
             "time": "2016-11-23T20:04:58+00:00"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "kwn/php-rdkafka-stubs",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kwn/php-rdkafka-stubs.git",
+                "reference": "c35103160ea21cc0e6861fbee4124a8108367213"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/kwn/php-rdkafka-stubs/c35103160ea21cc0e6861fbee4124a8108367213.zip",
+                "reference": "c35103160ea21cc0e6861fbee4124a8108367213",
+                "shasum": ""
+            },
+            "require": {
+                "ext-rdkafka": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Karol Wnuk",
+                    "email": "k.wnuk@ascetic.pl"
+                }
+            ],
+            "description": "Rdkafka extension stubs for your IDE",
+            "time": "2017-03-26T10:14:53+00:00"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
