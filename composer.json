@@ -16,8 +16,8 @@
     "guzzlehttp/guzzle": "^6.3"
   },
   "suggest": {
-    "kwn/php-rdkafka-stubs": "^1.0.2",
-    "phpunit/phpunit": "^6.4"
+    "kwn/php-rdkafka-stubs": "for kafka support",
+    "phpunit/phpunit": "for unit test"
   },
   "config": {
     "process-timeout": 1800,
