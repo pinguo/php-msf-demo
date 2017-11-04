@@ -80,4 +80,13 @@ class Http extends Controller
 
         $this->outputView(['html' => $results[0]['body'] . $results[0]['body']]);
     }
+
+    /**
+     * http keep-alive cache
+     */
+    public function actionKeepAlive()
+    {
+        $data = yield $this->getObject(Client::class)->goSingleGet('http://127.0.0.1');
+        $this->output($data['body']);
+    }
 }

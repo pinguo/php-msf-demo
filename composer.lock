@@ -418,23 +418,21 @@
         },
         {
             "name": "mongodb/mongodb",
-            "version": "1.2.0",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mongodb/mongo-php-library.git",
-                "reference": "5cffeb33b893b6bb04195b99ddc3955a29252339"
+                "reference": "a307dd60e71e1291c60927ea4f3a1905146063f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/mongodb/mongo-php-library/5cffeb33b893b6bb04195b99ddc3955a29252339.zip",
-                "reference": "5cffeb33b893b6bb04195b99ddc3955a29252339",
+                "url": "https://files.phpcomposer.com/files/mongodb/mongo-php-library/a307dd60e71e1291c60927ea4f3a1905146063f5.zip",
+                "reference": "a307dd60e71e1291c60927ea4f3a1905146063f5",
                 "shasum": ""
             },
             "require": {
-                "ext-hash": "*",
-                "ext-json": "*",
-                "ext-mongodb": "^1.3.0",
-                "php": ">=5.5"
+                "ext-mongodb": "^1.2.0",
+                "php": ">=5.4"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.8"
@@ -474,7 +472,7 @@
                 "mongodb",
                 "persistence"
             ],
-            "time": "2017-10-27T19:42:57+00:00"
+            "time": "2017-02-16T18:40:32+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -684,12 +682,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pinguo/php-msf.git",
-                "reference": "4c62c24a8bfef79ac3d2f4a38e4e316153bdf856"
+                "reference": "6f5cb9678a7f7dee1832018fa6313fd7b9ddb7d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/pinguo/php-msf/4c62c24a8bfef79ac3d2f4a38e4e316153bdf856.zip",
-                "reference": "4c62c24a8bfef79ac3d2f4a38e4e316153bdf856",
+                "url": "https://files.phpcomposer.com/files/pinguo/php-msf/6f5cb9678a7f7dee1832018fa6313fd7b9ddb7d7.zip",
+                "reference": "6f5cb9678a7f7dee1832018fa6313fd7b9ddb7d7",
                 "shasum": ""
             },
             "require": {
@@ -721,7 +719,7 @@
             ],
             "description": "Pinguo Micro Service Framework For PHP",
             "homepage": "https://github.com/pinguo/php-msf",
-            "time": "2017-11-01T10:33:01+00:00"
+            "time": "2017-11-04T05:05:07+00:00"
         },
         {
             "name": "psr/http-message",
