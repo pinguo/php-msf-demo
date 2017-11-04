@@ -13,8 +13,11 @@
     "pinguo/php-msf": "dev-master",
     "pinguo/php-i18n": "dev-master",
     "alcaeus/mongo-php-adapter": "^1.0",
-    "phpunit/phpunit": "^6.4",
     "guzzlehttp/guzzle": "^6.3"
+  },
+  "suggest": {
+    "kwn/php-rdkafka-stubs": "for kafka support",
+    "phpunit/phpunit": "for unit test"
   },
   "config": {
     "process-timeout": 1800,
