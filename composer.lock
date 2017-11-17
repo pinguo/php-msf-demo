@@ -306,16 +306,16 @@
         },
         {
             "name": "hassankhan/config",
-            "version": "0.10.0",
+            "version": "0.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hassankhan/config.git",
-                "reference": "06ac500348af033f1a2e44dc357ca86282626d4a"
+                "reference": "7fbc236c32dc6cc53a7b00992a2739cf8b41c085"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/hassankhan/config/06ac500348af033f1a2e44dc357ca86282626d4a.zip",
-                "reference": "06ac500348af033f1a2e44dc357ca86282626d4a",
+                "url": "https://files.phpcomposer.com/files/hassankhan/config/7fbc236c32dc6cc53a7b00992a2739cf8b41c085.zip",
+                "reference": "7fbc236c32dc6cc53a7b00992a2739cf8b41c085",
                 "shasum": ""
             },
             "require": {
@@ -359,7 +359,7 @@
                 "yaml",
                 "yml"
             ],
-            "time": "2016-02-11T16:21:17+00:00"
+            "time": "2017-11-07T22:49:43+00:00"
         },
         {
             "name": "league/plates",
@@ -418,21 +418,23 @@
         },
         {
             "name": "mongodb/mongodb",
-            "version": "1.1.2",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mongodb/mongo-php-library.git",
-                "reference": "a307dd60e71e1291c60927ea4f3a1905146063f5"
+                "reference": "5cffeb33b893b6bb04195b99ddc3955a29252339"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/mongodb/mongo-php-library/a307dd60e71e1291c60927ea4f3a1905146063f5.zip",
-                "reference": "a307dd60e71e1291c60927ea4f3a1905146063f5",
+                "url": "https://files.phpcomposer.com/files/mongodb/mongo-php-library/5cffeb33b893b6bb04195b99ddc3955a29252339.zip",
+                "reference": "5cffeb33b893b6bb04195b99ddc3955a29252339",
                 "shasum": ""
             },
             "require": {
-                "ext-mongodb": "^1.2.0",
-                "php": ">=5.4"
+                "ext-hash": "*",
+                "ext-json": "*",
+                "ext-mongodb": "^1.3.0",
+                "php": ">=5.5"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.8"
@@ -472,7 +474,7 @@
                 "mongodb",
                 "persistence"
             ],
-            "time": "2017-02-16T18:40:32+00:00"
+            "time": "2017-10-27T19:42:57+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -682,12 +684,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pinguo/php-msf.git",
-                "reference": "6f5cb9678a7f7dee1832018fa6313fd7b9ddb7d7"
+                "reference": "716a097b9f562dfbee9889277cf26e09c4d4d5a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/pinguo/php-msf/6f5cb9678a7f7dee1832018fa6313fd7b9ddb7d7.zip",
-                "reference": "6f5cb9678a7f7dee1832018fa6313fd7b9ddb7d7",
+                "url": "https://files.phpcomposer.com/files/pinguo/php-msf/716a097b9f562dfbee9889277cf26e09c4d4d5a2.zip",
+                "reference": "716a097b9f562dfbee9889277cf26e09c4d4d5a2",
                 "shasum": ""
             },
             "require": {
@@ -719,7 +721,7 @@
             ],
             "description": "Pinguo Micro Service Framework For PHP",
             "homepage": "https://github.com/pinguo/php-msf",
-            "time": "2017-11-04T05:05:07+00:00"
+            "time": "2017-11-14T10:24:40+00:00"
         },
         {
             "name": "psr/http-message",
