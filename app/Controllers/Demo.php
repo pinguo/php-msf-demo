@@ -66,4 +66,10 @@ class Demo extends Controller
 
         $this->outputJson(['data' => $sayHi, 'status' => 200, 'msg' => I18N::t('demo.error', 200, [], 'zh_CN')]);
     }
+
+    public function actionShellExec()
+    {
+        $result = yield $this->getObject(\PG\MSF\Coroutine\Shell::class)->goExec('ps aux | grep msf');
+        $this->output($result);
+    }
 }
