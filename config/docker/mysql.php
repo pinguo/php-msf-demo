@@ -28,7 +28,7 @@ $config['mysql_proxy']['master_slave'] = [
         'master' => 'master',
         'slaves' => ['slave1', 'slave2'],
     ],
-    'mode' => \PG\MSF\Marco::MASTER_SLAVE,
+    'mode' => \PG\MSF\Macro::MASTER_SLAVE,
 ];
 
 return $config;
