@@ -32,7 +32,7 @@ $config['redis']['p6']['port']             = 7381;
 
 $config['redis_proxy']['master_slave'] = [
     'pools' => ['p1', 'p2', 'p3'],
-    'mode' => \PG\MSF\Marco::MASTER_SLAVE,
+    'mode' => \PG\MSF\Macro::MASTER_SLAVE,
 ];
 
 $config['redis_proxy']['cluster'] = [
@@ -41,7 +41,7 @@ $config['redis_proxy']['cluster'] = [
         'p5' => 1,
         'p6' => 1
     ],
-    'mode' => \PG\MSF\Marco::CLUSTER,
+    'mode' => \PG\MSF\Macro::CLUSTER,
 ];
 
 return $config;
