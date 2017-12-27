@@ -588,21 +588,21 @@
         },
         {
             "name": "pinguo/php-context",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pinguo/php-context.git",
-                "reference": "84e8b2c0aa5a41d54bdcb5e0c200301e779f1632"
+                "reference": "46da9eab41ecba7e8a9e54a0d255863b75f6073d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/pinguo/php-context/84e8b2c0aa5a41d54bdcb5e0c200301e779f1632.zip",
-                "reference": "84e8b2c0aa5a41d54bdcb5e0c200301e779f1632",
+                "url": "https://files.phpcomposer.com/files/pinguo/php-context/46da9eab41ecba7e8a9e54a0d255863b75f6073d.zip",
+                "reference": "46da9eab41ecba7e8a9e54a0d255863b75f6073d",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.0",
-                "pinguo/php-log": "1.0.0"
+                "pinguo/php-log": "1.0.1"
             },
             "type": "library",
             "autoload": {
@@ -615,7 +615,7 @@
                 "GPL"
             ],
             "description": "pinguo PHP Context",
-            "time": "2017-09-07T02:25:27+00:00"
+            "time": "2017-12-01T02:07:43+00:00"
         },
         {
             "name": "pinguo/php-i18n",
@@ -649,16 +649,16 @@
         },
         {
             "name": "pinguo/php-log",
-            "version": "1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pinguo/php-log.git",
-                "reference": "e49806aef1418fff6f457711c8176451ca6df896"
+                "reference": "0e0a45185711d1308d324405f064cb1c4f081ed3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/pinguo/php-log/e49806aef1418fff6f457711c8176451ca6df896.zip",
-                "reference": "e49806aef1418fff6f457711c8176451ca6df896",
+                "url": "https://files.phpcomposer.com/files/pinguo/php-log/0e0a45185711d1308d324405f064cb1c4f081ed3.zip",
+                "reference": "0e0a45185711d1308d324405f064cb1c4f081ed3",
                 "shasum": ""
             },
             "require": {
@@ -676,7 +676,7 @@
                 "GPL"
             ],
             "description": "Pinguo PHP log",
-            "time": "2017-09-04T08:56:00+00:00"
+            "time": "2017-11-30T10:27:04+00:00"
         },
         {
             "name": "pinguo/php-msf",
@@ -684,12 +684,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pinguo/php-msf.git",
-                "reference": "f175c67c4f7b3cc1fc9c997f5a993ac35fcf2715"
+                "reference": "105f11f2f9a1be0eabb77d782083cc348320992c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/pinguo/php-msf/f175c67c4f7b3cc1fc9c997f5a993ac35fcf2715.zip",
-                "reference": "f175c67c4f7b3cc1fc9c997f5a993ac35fcf2715",
+                "url": "https://files.phpcomposer.com/files/pinguo/php-msf/105f11f2f9a1be0eabb77d782083cc348320992c.zip",
+                "reference": "105f11f2f9a1be0eabb77d782083cc348320992c",
                 "shasum": ""
             },
             "require": {
@@ -699,12 +699,14 @@
                 "league/plates": "3.3.0",
                 "php": ">=7.0",
                 "pinguo/php-aop": "1.0.0",
-                "pinguo/php-context": "1.0.0",
-                "pinguo/php-log": "1.0.0"
+                "pinguo/php-context": "1.0.1",
+                "pinguo/php-log": "1.0.1"
             },
             "suggest": {
                 "alcaeus/mongo-php-adapter": "^1.0",
-                "ext-amqp": ">=1.8.0"
+                "ext-amqp": ">=1.8.0",
+                "kwn/php-rdkafka-stubs": "for kafka support",
+                "pda/pheanstalk": "PHP client for beanstalkd queue"
             },
             "type": "library",
             "autoload": {
@@ -722,7 +724,7 @@
             ],
             "description": "Pinguo Micro Service Framework For PHP",
             "homepage": "https://github.com/pinguo/php-msf",
-            "time": "2017-11-27T13:42:01+00:00"
+            "time": "2017-12-27T08:55:21+00:00"
         },
         {
             "name": "psr/http-message",
