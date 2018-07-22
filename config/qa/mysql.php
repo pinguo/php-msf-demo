@@ -2,15 +2,12 @@
 /**
  * Docker环境
  */
-$config['mysql']['master']['host']            = '172.22.34.199';
+$config['mysql']['master']['host']            = '127.0.0.1';
 $config['mysql']['master']['port']            = 3306;
 $config['mysql']['master']['user']            = 'root';
 $config['mysql']['master']['password']        = '123456';
 $config['mysql']['master']['charset']         = 'utf8';
 $config['mysql']['master']['database']        = 'demo';
-$config['mysql']['master']['min_conn']        = 10;
-$config['mysql']['master']['max_conn']        = 60;
-$config['mysql']['master']['max_time']        = 3600;
 
 $config['mysql']['slave1']['host']           = '127.0.0.1';
 $config['mysql']['slave1']['port']           = 3306;

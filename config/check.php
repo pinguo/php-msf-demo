@@ -9,9 +9,6 @@
 // 忽略的文件和目录
 return array(
     'exclude' => array(
-        '/test/',
-        '/vendors/',
-        '/www/',
-        '/Server/',
+        'Views/',
     ),
 );
