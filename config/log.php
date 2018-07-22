@@ -2,8 +2,8 @@
 /**
  * 日志配置文件
  *
- * @author camera360_server@camera360.com
- * @copyright Chengdu pinguo Technology Co.,Ltd.
+ * @author xudianyang@g7.com.cn
+ * @copyright Chengdu G7 Technology Co.,Ltd.
  */
 
 $config['server']['log'] = [
@@ -17,7 +17,7 @@ $config['server']['log'] = [
                 \PG\Log\PGLog::WARNING
             ],
             'dateFormat' => "Y/m/d H:i:s",
-            'format' => "%datetime% [%level_name%] [%channel%] [logid:%logId%] %message%\n",
+            'format' => '{"type": "application", "datetime": "%datetime%", "level": "%level_name%", "channel": "%channel%", "logid": "%logId%", "message": "%message%"}' . "\n",
             'stream' => RUNTIME_DIR . '/application.log',
             'buffer' => 0,
         ],
@@ -28,7 +28,7 @@ $config['server']['log'] = [
                 \PG\Log\PGLog::DEBUG
             ],
             'dateFormat' => "Y/m/d H:i:s",
-            'format' => "%datetime% [%level_name%] [%channel%] [logid:%logId%] %message%\n",
+            'format' => '{"type": "notice", "datetime": "%datetime%", "level": "%level_name%", "channel": "%channel%", "logid": "%logId%", "message": "%message%"}' . "\n",
             'stream' => RUNTIME_DIR . '/notice.log',
             'buffer' => 0,
         ]

@@ -22,6 +22,8 @@ $config['http']['domain']         = [
     ],
 ];
 // http访问时默认方法
+$config['http']['default_controller'] = 'Index';
+// http访问时默认方法
 $config['http']['default_method'] = 'Index';
 // dns缓存有效时间，单位秒
 $config['http']['dns']['expire']  = 10;

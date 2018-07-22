@@ -28,6 +28,7 @@ $config['server']['set'] = [
     'dispatch_mode'            => 1,
     //swoole server设置端口重用
     'enable_reuse_port'        => true,
+    'log_file'                 => RUNTIME_DIR . '/server.log',
 ];
 // 异步IO配置
 $config['server']['async_io'] = [
