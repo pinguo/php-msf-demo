@@ -116,4 +116,41 @@ class MySQL extends Controller
         $user     = yield $demoTask->syncMySQLProxyTransaction();
         $this->outputJson($user);
     }
+
+    public function actionMysqlTest()
+    {
+        try {
+            $m = $this->getObject(\App\Models\Demo::class, [1, 2]);
+            yield $m->e();
+        } catch (\Exception $e) {
+            dump($e);
+        }
+        $this->output('ok');
+    }
+
+    // 分页
+    public function actionPage()
+    {
+        $dbs   = yield $this->getMysqlPool('master')->select("*")->from("user")->limit(3)->go();
+//        $total = yield $this->getMysqlPool('master')->select("count(*) as total")->from("user")->go();
+//        $res   = ['page' => $dbs['result'], 'count' => $total['result']];
+        $res   = ['page' => $dbs['result'], 'count' => 0];
+        $this->outputJson($res);
+    }
+
+    // 事务示例
+    public function actionUserAdd()
+    {
+        $mysqlPool = $this->getMysqlPool('master');
+        $mysqlPool->insert('user')->values(['name' => uniqid()])->go()->break();
+        $this->outputJson('ok');
+    }
+
+    public function actionMySQLUpdate()
+    {
+        $mysqlPool = $this->getMysqlPool('master');
+        $up = yield $mysqlPool->update('user')->set('name', '徐典阳-1')->where('id', rand(3, 213374))->go();
+        $ex = yield $mysqlPool->select('*')->from('user')->where('id', 3)->go();
+        $this->outputJson([$up, $ex]);
+    }
 }

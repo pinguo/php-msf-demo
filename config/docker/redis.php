@@ -4,6 +4,9 @@
  */
 $config['redis']['p1']['ip']               = '127.0.0.1';
 $config['redis']['p1']['port']             = 6379;
+$config['redis']['p1']['min_conn']         = 3;
+$config['redis']['p1']['max_conn']         = 6;
+$config['redis']['p1']['max_time']         = 18;
 //$config['redis']['p1']['password']       = 'xxxx';
 //$config['redis']['p1']['select']         = 1;
 // Redis序列化选项等同于phpredis序列化的各个选项如:\Redis::SERIALIZER_PHP,\Redis::SERIALIZER_IGBINARY
